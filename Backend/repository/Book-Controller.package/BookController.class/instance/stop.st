@@ -1,0 +1,4 @@
+Actions
+stop
+
+	server stop

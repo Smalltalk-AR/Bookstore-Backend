@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"bookFromJsonObject:" : "Anonymous 6/17/2017 23:39",
+		"initialize" : "Anonymous 6/17/2017 11:39",
+		"initializeDatabaseConfigurations" : "Anonymous 6/18/2017 12:32",
+		"initializeRoutes" : "Anonymous 6/17/2017 23:38",
+		"initializeServer" : "Anonymous 6/17/2017 11:39",
+		"start" : "Anonymous 6/1/2017 22:56",
+		"stop" : "Anonymous 6/1/2017 22:56" } }

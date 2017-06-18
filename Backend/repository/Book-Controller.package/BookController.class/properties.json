@@ -1,0 +1,15 @@
+{
+	"category" : "Book-Controller",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"server",
+		"bookShop" ],
+	"name" : "BookController",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

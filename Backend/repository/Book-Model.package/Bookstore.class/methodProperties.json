@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addBook:" : "Anonymous 6/17/2017 11:07",
+		"allBooks" : "Anonymous 6/17/2017 23:34",
+		"allTableNames" : "Anonymous 6/17/2017 10:40",
+		"classModelBook:" : "Anonymous 6/17/2017 10:42",
+		"connect" : "Anonymous 6/17/2017 10:43",
+		"connectionFailed" : "Anonymous 6/17/2017 10:45",
+		"connectionFailed:" : "Anonymous 6/17/2017 10:44",
+		"constructAllClasses" : "Anonymous 6/17/2017 10:46",
+		"createAllSequences" : "Anonymous 6/17/2017 10:46",
+		"createAllTables" : "Anonymous 6/17/2017 10:47",
+		"createLogin" : "Anonymous 6/17/2017 10:48",
+		"descriptorForBook:" : "Anonymous 6/17/2017 23:22",
+		"disconnect" : "Anonymous 6/17/2017 10:51",
+		"dropAllThenCreateSchema" : "Anonymous 6/17/2017 10:52",
+		"glorpSession" : "Anonymous 6/17/2017 10:56",
+		"glorpSession:" : "Anonymous 6/17/2017 10:55",
+		"initialize" : "Anonymous 6/17/2017 10:58",
+		"removeBook:" : "Anonymous 6/17/2017 11:13",
+		"tableForBOOK:" : "Anonymous 6/17/2017 11:01",
+		"updateBook:from:" : "Anonymous 6/18/2017 12:17" } }

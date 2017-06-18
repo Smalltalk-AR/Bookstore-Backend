@@ -1,0 +1,18 @@
+{
+	"category" : "Book-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"id",
+		"title",
+		"author",
+		"editorial",
+		"year" ],
+	"name" : "Book",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

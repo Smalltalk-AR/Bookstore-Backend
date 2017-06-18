@@ -1,0 +1,14 @@
+{
+	"category" : "Book-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "NilBookProperty",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

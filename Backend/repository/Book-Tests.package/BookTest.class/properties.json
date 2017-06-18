@@ -1,0 +1,14 @@
+{
+	"category" : "Book-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BookTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

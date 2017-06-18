@@ -1,0 +1,15 @@
+{
+	"category" : "Book-Model",
+	"classinstvars" : [
+		"uniqueInstance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"connectionFailed",
+		"glorpSession" ],
+	"name" : "Bookstore",
+	"pools" : [
+		 ],
+	"super" : "DescriptorSystem",
+	"type" : "normal" }
