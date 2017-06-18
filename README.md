@@ -40,6 +40,9 @@ controller start.
 ```
 *This drops and creates all tables , so if you restart server all data will be lost (this can be changed, obviously)*
 
+Now download dependencies of frontend using:
+**npm install** being at **package.json** directory.
+ 
 Then you must start a server for Frontend (for example http-server from Node) and starts at the Frontend directory using:
 * http-server --cors -p 8081*
 
