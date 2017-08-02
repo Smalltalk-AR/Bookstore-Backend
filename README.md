@@ -8,6 +8,15 @@
  *-Glorp and MySql for Persistence.*
 
 ##Installation / Instructions
+### Teapot Installations (Rest Routes Framework)
+Execute the code in **Playground**:
+
+```Smalltalk
+Gofer it
+    smalltalkhubUser: 'zeroflag' project: 'Teapot';
+    configuration;
+    loadStable.
+```
 
 ### Glorp Installation (Persistence) 
 Execute the code in **Playground**:
@@ -31,7 +40,7 @@ Gofer new
 ### Application Installation
 Add the application in Pharo Image via Filetree/ gitFiletree.
 
-Then Execute the code in **Playground**:
+To run backend server execute this code in **Playground**:
 
 ```Smalltalk
 |controller|
@@ -44,6 +53,6 @@ Now download dependencies of frontend using:
 **npm install** being at **package.json** directory.
  
 Then you must start a server for Frontend (for example http-server from Node) and starts at the Frontend directory using:
-* http-server --cors -p 8081*
+* http-server -p 8081*
 
 *Now from browser: localhost:8081*
