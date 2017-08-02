@@ -2,11 +2,15 @@
 *A CRUD Web Application of a Bookstore.*
 
 *Frontend:*
+
  *-Angular Framework with Jquery, Bootstrap,etc.*
  
 *Backend:*
+
  *-Smalltalk as programming language and Pharo 5.0 as Dialect.*
+ 
  *-Teapot and Zinc frameworks for server and routes*
+ 
  *-Glorp and MySql for Persistence.*
 
 ##Installation / Instructions
