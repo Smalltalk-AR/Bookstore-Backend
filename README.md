@@ -8,7 +8,7 @@
  *-Glorp and MySql for Persistence.*
 
 ##Installation / Instructions
-### Teapot Installations (Rest Routes Framework)
+### Teapot Installation (Rest Routes Framework)
 Execute the code in **Playground**:
 
 ```Smalltalk
