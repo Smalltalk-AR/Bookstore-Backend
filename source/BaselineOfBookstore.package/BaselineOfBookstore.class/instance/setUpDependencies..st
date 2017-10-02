@@ -6,7 +6,7 @@ setUpDependencies: spec
 				versionString: #stable;
 				repository: 'http://smalltalkhub.com/mc/zeroflag/Teapot/main' ].
 	spec
-		configuration: 'Glorp'
+		baseline: 'GlorpDriverMySQL'
 		with: [ spec
-				versionString: #stable;
-				repository: 'http://www.smalltalkhub.com/mc/DBXTalk/Configurations/main' ]
+				repository: 'github://apiorno/GlorpDriverMySQL:master/source';
+loads: #('Deployment') ].
