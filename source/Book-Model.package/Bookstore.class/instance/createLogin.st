@@ -3,6 +3,6 @@ createLogin
 	^ Login new
 		database: platform;
 		username: 'root';
-		password: 'root';
+		password: '';
 		connectString: 'localhost_books';
 		yourself

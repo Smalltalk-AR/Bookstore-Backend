@@ -6,7 +6,7 @@ testFailedCreation
 				wroteBy: 'author'
 				editedBy: 'editorial'
 				createdOn: 2001 ]
-		raise: NilBookProperty
+		raise: Error
 		withExceptionDo: [ :ex | self assert: ex messageText equals: 'Nil property in Book' ].
 	self
 		should: [ Book
@@ -14,5 +14,5 @@ testFailedCreation
 				wroteBy: 'author'
 				editedBy: 'editorial'
 				createdOn: nil ]
-		raise: NilBookProperty
+		raise: Error
 		withExceptionDo: [ :ex | self assert: ex messageText equals: 'Nil property in Book' ]

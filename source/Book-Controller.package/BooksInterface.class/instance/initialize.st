@@ -1,5 +1,5 @@
 Initialization
 initialize
-	self initializeDatabaseConfigurations.
+	booksController := BooksController new.
 	self initializeServer.
 	self initializeRoutes

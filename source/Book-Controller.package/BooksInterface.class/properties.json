@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "Alvaro 10/2/2017 22:40",
+	"super" : "Object",
+	"category" : "Book-Controller",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"booksController",
+		"server"
+	],
+	"name" : "BooksInterface",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+Initialization
+initialize
+	self initializeDatabaseConfigurations.

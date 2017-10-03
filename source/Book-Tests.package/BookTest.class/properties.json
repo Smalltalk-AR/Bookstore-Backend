@@ -1,14 +1,11 @@
 {
-	"category" : "Book-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "BookTest",
-	"pools" : [
-		 ],
+	"commentStamp" : "Alvaro 10/2/2017 22:39",
 	"super" : "TestCase",
-	"type" : "normal" }
+	"category" : "Book-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BookTest",
+	"type" : "normal"
+}

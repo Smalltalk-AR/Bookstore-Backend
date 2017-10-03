@@ -1,8 +1,8 @@
 RDB-Protocol
 createAllSequences
-	self glorpSession system platform areSequencesExplicitlyCreated
+	self platform areSequencesExplicitlyCreated
 		ifFalse: [ ^ self ].
-	self glorpSession system allSequences
+	self allSequences
 		do: [ :each | 
 			self glorpSession accessor
 				createSequence: each

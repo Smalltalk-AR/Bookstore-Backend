@@ -1,0 +1,15 @@
+{
+	"instance" : {
+		"allBooks" : "Alvaro 10/2/2017 21:31",
+		"bookFromJsonObject:" : "Anonymous 6/17/2017 23:39",
+		"initialize" : "Alvaro 10/2/2017 21:19",
+		"optionsHeaders" : "Alvaro 10/2/2017 22:30",
+		"removeBookOfId:" : "Alvaro 10/2/2017 21:32",
+		"booksOptions" : "Alvaro 10/2/2017 22:30",
+		"addBookFrom:" : "Alvaro 10/2/2017 21:29",
+		"initializeDatabaseConfigurations" : "Alvaro 10/2/2017 22:34",
+		"normalHeaders" : "Alvaro 10/2/2017 21:29",
+		"updateBookOfId:withBookFrom:" : "Alvaro 10/2/2017 22:24"
+	},
+	"class" : { }
+}
