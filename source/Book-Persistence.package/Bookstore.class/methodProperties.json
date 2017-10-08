@@ -4,7 +4,9 @@
 		"allTableNames" : "Anonymous 6/17/2017 10:40",
 		"tableForBOOK:" : "Anonymous 6/17/2017 11:01",
 		"initialize" : "Alvaro 10/2/2017 22:34",
+		"dropAllTables" : "Alvaro 10/8/2017 15:04",
 		"allBooks" : "Anonymous 6/17/2017 23:34",
+		"booksCount" : "Alvaro 10/8/2017 12:58",
 		"glorpSession:" : "Anonymous 6/17/2017 10:55",
 		"connectionFailed" : "Anonymous 6/17/2017 10:45",
 		"glorpSession" : "Anonymous 6/17/2017 10:56",
@@ -17,7 +19,7 @@
 		"connectionFailed:" : "Anonymous 6/17/2017 10:44",
 		"addBook:" : "Anonymous 6/17/2017 11:07",
 		"createAllTables" : "Alvaro 10/2/2017 22:39",
-		"dropAllThenCreateSchema" : "Anonymous 6/17/2017 10:52",
+		"dropAllThenCreateSchema" : "Alvaro 10/8/2017 15:04",
 		"disconnect" : "Anonymous 6/17/2017 10:51",
 		"createLogin" : "Alvaro 10/2/2017 22:36"
 	},
