@@ -1,11 +1,11 @@
 {
 	"instance" : {
-		"testAddBook" : "Alvaro 10/8/2017 12:58",
-		"testRemoveBook" : "Alvaro 10/8/2017 14:21",
-		"testUpdateBook" : "Alvaro 10/8/2017 14:32",
-		"tearDown" : "Alvaro 10/8/2017 12:49",
+		"testAddBook" : "Alvaro 10/8/2017 16:30",
+		"testRemoveBook" : "Alvaro 10/8/2017 16:34",
+		"testUpdateBook" : "Alvaro 10/8/2017 16:30",
+		"tearDown" : "Alvaro 10/8/2017 16:32",
 		"book" : "Alvaro 10/8/2017 12:57",
-		"setUp" : "Alvaro 10/8/2017 15:02",
+		"setUp" : "Alvaro 10/8/2017 16:30",
 		"anotherBook" : "Alvaro 10/8/2017 14:33"
 	},
 	"class" : { }

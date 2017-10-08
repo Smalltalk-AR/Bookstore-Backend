@@ -1,4 +1,5 @@
 Initialization
 initializeDatabaseConfigurations
-	bookShop := Bookstore new.
-	bookShop dropAllThenCreateSchema
+	persistenceSystem := GeneralPersistenceSystem start.
+	booksManagementSystem  := BooksManagementSystem using: persistenceSystem .
+	persistenceSystem dropAllThenCreateSchema.

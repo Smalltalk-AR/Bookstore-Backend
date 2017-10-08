@@ -1,0 +1,23 @@
+{
+	"instance" : {
+		"creationDescriptorBlock" : "Alvaro 10/8/2017 16:19",
+		"allBooks" : "Alvaro 10/8/2017 16:26",
+		"creationTableBlock" : "Alvaro 10/8/2017 16:20",
+		"removeBook:" : "Alvaro 10/8/2017 16:26",
+		"configuration" : "Alvaro 10/4/2017 21:16",
+		"describedClass" : "Alvaro 10/8/2017 16:18",
+		"booksCount" : "Alvaro 10/8/2017 16:26",
+		"initializeUsing:" : "Alvaro 10/3/2017 20:49",
+		"bookOfId:" : "Alvaro 10/8/2017 16:34",
+		"table" : "Alvaro 10/4/2017 20:50",
+		"platform" : "Alvaro 10/4/2017 20:53",
+		"removeBookOfId:" : "Alvaro 10/8/2017 16:28",
+		"updateBookOfId:with:" : "Alvaro 10/8/2017 16:28",
+		"creationModelBlock" : "Alvaro 10/8/2017 16:18",
+		"addBook:" : "Alvaro 10/8/2017 16:25",
+		"tableName" : "Alvaro 10/4/2017 20:50"
+	},
+	"class" : {
+		"using:" : "Alvaro 10/3/2017 20:48"
+	}
+}

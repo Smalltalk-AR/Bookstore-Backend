@@ -1,11 +1,11 @@
 Tests
 testUpdateBook
 	| book anotherBook bookFromDatabase |
-	self assert: bookstore booksCount equals: 0.
+	self assert: booksManagementSystem booksCount equals: 0.
 	book := self book.
 	anotherBook := self anotherBook.
-	bookstore addBook: book.
-	bookstore updateBookOfId: book id with: anotherBook.
-	self assert: bookstore booksCount equals: 1.
-	bookFromDatabase := bookstore allBooks anyOne.
+	booksManagementSystem addBook: book.
+	booksManagementSystem updateBookOfId: book id with: anotherBook.
+	self assert: booksManagementSystem booksCount equals: 1.
+	bookFromDatabase := booksManagementSystem allBooks anyOne.
 	self assert: bookFromDatabase equals: anotherBook

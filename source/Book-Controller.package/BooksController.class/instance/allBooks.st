@@ -1,5 +1,5 @@
 Actions
 allBooks
 	^ TeaResponse ok
-		body: bookShop allBooks;
+		body: booksManagementSystem allBooks;
 		headers: self normalHeaders

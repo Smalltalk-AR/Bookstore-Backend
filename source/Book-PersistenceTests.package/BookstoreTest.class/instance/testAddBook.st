@@ -1,9 +1,9 @@
 Tests
 testAddBook
 	| book bookFromDatabase |
-	self assert: bookstore  booksCount equals: 0.
+	self assert: booksManagementSystem  booksCount equals: 0.
 	book := self book.
-	bookstore addBook: book.
-	self assert: bookstore booksCount equals: 1.
-	bookFromDatabase := bookstore allBooks anyOne.
+	booksManagementSystem addBook: book.
+	self assert: booksManagementSystem booksCount equals: 1.
+	bookFromDatabase := booksManagementSystem allBooks anyOne.
 	self assert: bookFromDatabase equals: book

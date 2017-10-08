@@ -1,4 +1,5 @@
 Initialization
 setUp
-	bookstore := Bookstore new.
-	bookstore dropAllThenCreateSchema
+	persistenceSystem := GeneralPersistenceSystem start.
+	booksManagementSystem  := BooksManagementSystem using: persistenceSystem .
+	persistenceSystem dropAllThenCreateSchema.

@@ -1,5 +1,0 @@
-Accessing
-glorpSession
-	^ glorpSession
-
-

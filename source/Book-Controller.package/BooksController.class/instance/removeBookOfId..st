@@ -1,3 +1,3 @@
 Actions
 removeBookOfId: anId
-	bookShop removeBookById: anId
+	booksManagementSystem removeBookById: anId

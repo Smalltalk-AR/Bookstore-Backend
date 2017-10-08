@@ -1,3 +1,3 @@
 Initialization
 tearDown
-	bookstore  dropAllTables
+	persistenceSystem  dropAllTables
