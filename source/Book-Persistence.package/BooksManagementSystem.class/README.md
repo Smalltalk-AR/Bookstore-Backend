@@ -1,1 +1,0 @@
-System to manage customers

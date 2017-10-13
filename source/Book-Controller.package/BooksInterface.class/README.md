@@ -1,1 +1,0 @@
-Interface of the books  application. Handle requests from frontend and interacts with Controller
