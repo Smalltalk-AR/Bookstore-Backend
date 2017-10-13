@@ -1,0 +1,3 @@
+Initialization
+initializeRoutes
+	BookService deployingOn: server delegatingTo: booksController

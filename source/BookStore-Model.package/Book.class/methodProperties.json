@@ -1,0 +1,23 @@
+{
+	"instance" : {
+		"synchronizeWith:" : "Alvaro 10/2/2017 22:28",
+		"initializeTitled:wroteBy:editedBy:createdOn:" : "Anonymous 5/31/2017 23:25",
+		"title" : "Anonymous 5/31/2017 23:23",
+		"=" : "fischettij 10/13/2017 11:38",
+		"id" : "Anonymous 6/18/2017 11:50",
+		"title:" : "Anonymous 6/18/2017 12:14",
+		"editorial" : "Anonymous 5/31/2017 23:24",
+		"id:" : "Anonymous 6/17/2017 23:41",
+		"year" : "Anonymous 5/31/2017 23:24",
+		"author:" : "Anonymous 6/18/2017 12:15",
+		"author" : "Anonymous 5/31/2017 23:23",
+		"editorial:" : "Anonymous 6/18/2017 12:15",
+		"year:" : "Anonymous 6/18/2017 12:15"
+	},
+	"class" : {
+		"neoJsonMapping:" : "Anonymous 6/3/2017 15:52",
+		"titled:wroteBy:editedBy:createdOn:" : "Anonymous 5/31/2017 23:27",
+		"glorpSetupDescriptor:forSystem:" : "Anonymous 6/17/2017 19:56",
+		"assertNotNil:" : "Alvaro 10/2/2017 20:44"
+	}
+}

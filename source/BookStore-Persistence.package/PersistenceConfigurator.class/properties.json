@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "Alvaro 10/4/2017 21:02",
+	"super" : "Object",
+	"category" : "BookStore-Persistence",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"describedClass",
+		"platform",
+		"tableName",
+		"creatingClassModelBlock",
+		"creatingDescriptorModelBlock",
+		"creatingTableBlock"
+	],
+	"name" : "PersistenceConfigurator",
+	"type" : "normal"
+}

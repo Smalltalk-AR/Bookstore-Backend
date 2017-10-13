@@ -1,0 +1,1 @@
+System that knows how to persist objects

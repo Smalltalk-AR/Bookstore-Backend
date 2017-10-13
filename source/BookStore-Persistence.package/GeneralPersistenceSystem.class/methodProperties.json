@@ -1,0 +1,31 @@
+{
+	"instance" : {
+		"addConfiguration:" : "Alvaro 10/3/2017 20:51",
+		"allTableNames" : "Alvaro 10/3/2017 20:52",
+		"remove:" : "Alvaro 10/4/2017 20:08",
+		"initialize" : "Alvaro 10/3/2017 20:50",
+		"dropAllTables" : "Alvaro 9/5/2017 18:22",
+		"initializeClassModel:" : "Alvaro 10/3/2017 20:43",
+		"glorpSession:" : "Alvaro 9/3/2017 19:32",
+		"add:" : "Alvaro 10/4/2017 20:06",
+		"connectionFailed" : "Alvaro 9/3/2017 19:32",
+		"createAllSequences" : "Alvaro 10/4/2017 19:10",
+		"glorpSession" : "Alvaro 9/3/2017 19:32",
+		"update:with:" : "Alvaro 10/4/2017 20:09",
+		"initializeDescriptor:" : "Alvaro 10/3/2017 20:41",
+		"connect" : "Alvaro 10/4/2017 19:18",
+		"countOf:" : "Alvaro 10/4/2017 20:06",
+		"findOneOf:satisfying:" : "Alvaro 10/8/2017 16:17",
+		"constructClassesFromDescriptorMethods" : "Alvaro 10/3/2017 20:06",
+		"connectionFailed:" : "Alvaro 9/3/2017 19:33",
+		"initializeTable:" : "Alvaro 10/4/2017 20:59",
+		"createAllTables" : "Alvaro 10/4/2017 19:16",
+		"allOf:" : "Alvaro 10/4/2017 20:06",
+		"dropAllThenCreateSchema" : "Alvaro 9/5/2017 18:22",
+		"disconnect" : "Alvaro 10/4/2017 19:19",
+		"createLogin" : "fischettij 10/13/2017 11:36"
+	},
+	"class" : {
+		"start" : "Alvaro 9/5/2017 18:51"
+	}
+}

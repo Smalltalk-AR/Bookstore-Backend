@@ -1,0 +1,1 @@
+A parametrizable configurator for persistence of objects

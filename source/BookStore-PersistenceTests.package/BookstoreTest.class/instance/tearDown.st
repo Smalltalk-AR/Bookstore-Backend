@@ -1,0 +1,3 @@
+Initialization
+tearDown
+	persistenceSystem  dropAllTables

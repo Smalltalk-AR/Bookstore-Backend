@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "BookStore-PersistenceTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"persistenceSystem",
+		"booksManagementSystem"
+	],
+	"name" : "BookstoreTest",
+	"type" : "normal"
+}

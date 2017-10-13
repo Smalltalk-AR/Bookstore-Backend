@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "Alvaro 10/2/2017 22:33",
+	"super" : "Object",
+	"category" : "BookStore-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"title",
+		"author",
+		"editorial",
+		"year"
+	],
+	"name" : "Book",
+	"type" : "normal"
+}
