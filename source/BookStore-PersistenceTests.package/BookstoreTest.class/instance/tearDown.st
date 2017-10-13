@@ -1,3 +1,4 @@
 Initialization
 tearDown
-	persistenceSystem  dropAllTables
+	persistenceSystem  dropAllTables.
+	GeneralPersistenceSystem stop

@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"server",
-		"persistenceSystem",
 		"booksManagementSystem"
 	],
 	"name" : "BooksController",

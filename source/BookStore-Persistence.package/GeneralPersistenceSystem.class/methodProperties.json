@@ -3,7 +3,7 @@
 		"addConfiguration:" : "Alvaro 10/3/2017 20:51",
 		"allTableNames" : "Alvaro 10/3/2017 20:52",
 		"remove:" : "Alvaro 10/4/2017 20:08",
-		"initialize" : "Alvaro 10/3/2017 20:50",
+		"initialize" : "fischettij 10/13/2017 14:55",
 		"dropAllTables" : "Alvaro 9/5/2017 18:22",
 		"initializeClassModel:" : "Alvaro 10/3/2017 20:43",
 		"glorpSession:" : "Alvaro 9/3/2017 19:32",
@@ -26,6 +26,9 @@
 		"createLogin" : "fischettij 10/13/2017 11:36"
 	},
 	"class" : {
-		"start" : "Alvaro 9/5/2017 18:51"
+		"current" : "fischettij 10/13/2017 17:20",
+		"stop" : "fischettij 10/13/2017 15:07",
+		"start" : "fischettij 10/13/2017 15:08",
+		"newInstance" : "fischettij 10/13/2017 14:40"
 	}
 }

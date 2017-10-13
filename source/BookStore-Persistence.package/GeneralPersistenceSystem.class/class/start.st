@@ -1,4 +1,4 @@
 accessing
 start
-	self flag: 'Hacer singleton'.
-	^ self new
+	self current ifNil: [ self newInstance ] ifNotNil: [ "Do nothing" ].
+	^self current connect.
