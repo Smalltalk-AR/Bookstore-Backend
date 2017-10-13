@@ -1,4 +1,4 @@
-initialization
+initialization-service
 initializeOptions
 	server
 		OPTIONS: (self fullPathUsing: '/books') -> controller booksOptions;
