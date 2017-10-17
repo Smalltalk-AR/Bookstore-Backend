@@ -1,0 +1,4 @@
+initialization
+tearDown
+	persistenceSystem  dropAllTables.
+	GeneralPersistenceSystem stop

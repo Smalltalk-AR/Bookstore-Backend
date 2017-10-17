@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "fischettij 10/17/2017 12:58",
+	"commentStamp" : "fischettij 10/17/2017 14:51",
 	"super" : "Object",
 	"category" : "BookStore-Persistence",
 	"classinstvars" : [ ],
@@ -8,6 +8,6 @@
 	"instvars" : [
 		"generalPersistenceSystem"
 	],
-	"name" : "BooksManagementSystem",
+	"name" : "PersonManagementSystem",
 	"type" : "normal"
 }

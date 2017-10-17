@@ -9,6 +9,6 @@
 		"persistenceSystem",
 		"booksManagementSystem"
 	],
-	"name" : "BookstoreTest",
+	"name" : "BooksManagementSystemTest",
 	"type" : "normal"
 }

@@ -1,1 +1,1 @@
-System to manage customers
+System to manage books

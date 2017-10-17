@@ -1,0 +1,4 @@
+initialization
+initializeUsing: aGeneralPersistenceSystem
+	generalPersistenceSystem := aGeneralPersistenceSystem.
+	generalPersistenceSystem addConfiguration: self configuration

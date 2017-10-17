@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "fischettij 10/17/2017 12:34",
+	"super" : "Object",
+	"category" : "BookStore-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"firstName",
+		"lastName",
+		"country"
+	],
+	"name" : "Person",
+	"type" : "normal"
+}
