@@ -1,0 +1,12 @@
+{
+	"instance" : {
+		"someAuthor" : "fischettij 10/26/2017 14:24",
+		"testAddAuthorship" : "fischettij 10/26/2017 14:11",
+		"setUp" : "fischettij 10/26/2017 14:17",
+		"someBook" : "fischettij 10/26/2017 14:23",
+		"testRemoveAuthorship" : "fischettij 10/26/2017 15:31",
+		"setUpResources" : "fischettij 10/26/2017 14:17",
+		"setUpSystems" : "fischettij 10/26/2017 14:17"
+	},
+	"class" : { }
+}

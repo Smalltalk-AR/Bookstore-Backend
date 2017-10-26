@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "fischettij 10/20/2017 15:22",
+	"super" : "Object",
+	"category" : "BookStore-Persistence",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"generalPersistenceSystem"
+	],
+	"name" : "ManagementSystemBehavior",
+	"type" : "normal"
+}

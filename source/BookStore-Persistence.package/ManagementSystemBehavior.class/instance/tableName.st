@@ -1,0 +1,3 @@
+Accessing
+tableName
+	self subclassResponsibility

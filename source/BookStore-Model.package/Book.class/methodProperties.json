@@ -1,21 +1,20 @@
 {
 	"instance" : {
-		"synchronizeWith:" : "Alvaro 10/2/2017 22:28",
-		"initializeTitled:wroteBy:editedBy:createdOn:" : "Anonymous 5/31/2017 23:25",
+		"editorial:" : "Anonymous 6/18/2017 12:15",
+		"synchronizeWith:" : "fischettij 10/26/2017 14:08",
+		"initializeTitled:editedBy:createdOn:" : "fischettij 10/26/2017 14:06",
 		"title" : "Anonymous 5/31/2017 23:23",
-		"=" : "fischettij 10/13/2017 11:38",
+		"=" : "fischettij 10/26/2017 14:07",
 		"id" : "Anonymous 6/18/2017 11:50",
 		"title:" : "Anonymous 6/18/2017 12:14",
 		"editorial" : "Anonymous 5/31/2017 23:24",
 		"id:" : "Anonymous 6/17/2017 23:41",
-		"year" : "Anonymous 5/31/2017 23:24",
-		"author:" : "Anonymous 6/18/2017 12:15",
-		"author" : "Anonymous 5/31/2017 23:23",
-		"editorial:" : "Anonymous 6/18/2017 12:15",
-		"year:" : "Anonymous 6/18/2017 12:15"
+		"releaseYear" : "fischettij 10/26/2017 14:07",
+		"releaseYear:" : "fischettij 10/26/2017 14:07"
 	},
 	"class" : {
-		"titled:wroteBy:editedBy:createdOn:" : "Anonymous 5/31/2017 23:27",
-		"assertNotNil:" : "Alvaro 10/2/2017 20:44"
+		"assertNotEmpty:" : "fischettij 10/17/2017 17:01",
+		"titled:editedBy:createdOn:" : "fischettij 10/26/2017 13:55",
+		"assertNotNil:" : "fischettij 10/17/2017 17:02"
 	}
 }

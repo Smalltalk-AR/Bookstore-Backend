@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "BookStore-PersistenceTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"authorshipManagementSystem",
+		"persistenceSystem",
+		"booksManagementSystem",
+		"personManagementSystem"
+	],
+	"name" : "AuthorshipManagementSystemTest",
+	"type" : "normal"
+}

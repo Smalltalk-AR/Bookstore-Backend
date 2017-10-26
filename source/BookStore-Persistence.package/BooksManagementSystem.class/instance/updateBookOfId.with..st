@@ -1,4 +1,4 @@
-Querying
+Managing
 updateBookOfId: anId with: anotherBook
 	| aBook |
 	aBook := self bookOfId: anId.

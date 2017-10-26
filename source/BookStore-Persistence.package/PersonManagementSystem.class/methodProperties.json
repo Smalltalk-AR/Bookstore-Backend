@@ -4,20 +4,15 @@
 		"creationDescriptorBlock" : "fischettij 10/17/2017 14:58",
 		"removePersonWithId:" : "fischettij 10/17/2017 16:12",
 		"allPersons" : "fischettij 10/17/2017 15:59",
-		"creationTableBlock" : "fischettij 10/17/2017 14:57",
-		"configuration" : "fischettij 10/17/2017 14:55",
+		"creationTableBlock" : "fischettij 10/19/2017 10:57",
 		"personsCount" : "fischettij 10/17/2017 15:11",
-		"describedClass" : "fischettij 10/17/2017 14:59",
+		"configuration" : "fischettij 10/17/2017 14:55",
 		"remove:" : "fischettij 10/17/2017 16:11",
-		"initializeUsing:" : "fischettij 10/17/2017 14:54",
-		"table" : "fischettij 10/17/2017 14:58",
+		"describedClass" : "fischettij 10/17/2017 14:59",
 		"updatePerson:with:" : "fischettij 10/17/2017 16:45",
-		"platform" : "fischettij 10/17/2017 14:58",
 		"creationModelBlock" : "fischettij 10/17/2017 14:56",
 		"addPerson:" : "fischettij 10/17/2017 16:21",
-		"tableName" : "fischettij 10/17/2017 14:58"
+		"tableName" : "fischettij 10/19/2017 10:43"
 	},
-	"class" : {
-		"using:" : "fischettij 10/17/2017 14:54"
-	}
+	"class" : { }
 }

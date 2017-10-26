@@ -4,6 +4,5 @@ creationModelBlock
 	aModel
 		newAttributeNamed: #id;
 		newAttributeNamed: #title;
-		newAttributeNamed: #author;
 		newAttributeNamed: #editorial;
-		newAttributeNamed: #year ]
+		newAttributeNamed: #releaseYear ]

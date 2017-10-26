@@ -1,5 +1,5 @@
-Querying
+Managing
 removeBookOfId: anId
 | aBook |
 	aBook := self bookOfId: anId.
-	^ generalPersistenceSystem remove: aBook
+	^ self removeBook: aBook

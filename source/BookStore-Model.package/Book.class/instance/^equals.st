@@ -1,7 +1,5 @@
 Comparing
 = anObject
 	^ (anObject isKindOf: self class)
-		ifTrue: [ title = anObject title
-				and: [ author = anObject author
-						and: [ editorial = anObject editorial and: [ year = anObject year ] ] ] ]
-		ifFalse: [ false]
+		ifTrue: [ title = anObject title and: [ editorial = anObject editorial and: [ releaseYear = anObject releaseYear ] ] ]
+		ifFalse: [ false ]

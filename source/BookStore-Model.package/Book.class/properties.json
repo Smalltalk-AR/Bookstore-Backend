@@ -8,9 +8,8 @@
 	"instvars" : [
 		"id",
 		"title",
-		"author",
 		"editorial",
-		"year"
+		"releaseYear"
 	],
 	"name" : "Book",
 	"type" : "normal"
