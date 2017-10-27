@@ -1,4 +1,4 @@
 tests
 setUpResources
-	personManagementSystem addPerson: PersonTestResource new somePerson.
-	booksManagementSystem addBook: BookTestResource new someBook
+	self personManagementSystem addPerson: PersonTestResource new somePerson.
+	self booksManagementSystem addBook: BookTestResource new someBook

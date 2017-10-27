@@ -1,0 +1,3 @@
+Accessing
+emptyPath
+	^ String new

@@ -1,3 +1,5 @@
 Initialization
 initializeRoutes
-	BookService deployingOn: server delegatingTo: booksController
+	BookService deployingOn: server delegatingTo: (BooksController workingOn: rootSystem).
+	PersonService deployingOn: server delegatingTo: (PersonsController workingOn: rootSystem).
+	

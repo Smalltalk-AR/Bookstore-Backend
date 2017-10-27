@@ -1,5 +1,5 @@
 tests
 setUp
 	self setUpSystems.
-	persistenceSystem dropAllThenCreateSchema.
+	rootSystem persistenceSystem dropAllThenCreateSchema.
 	self setUpResources

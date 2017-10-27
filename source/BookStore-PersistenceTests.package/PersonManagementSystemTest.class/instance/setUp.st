@@ -1,6 +1,6 @@
 initialization
 setUp
-	persistenceSystem := GeneralPersistenceSystem start.
-	BooksManagementSystem using: persistenceSystem.
-	personManagementSystem  := PersonManagementSystem using: persistenceSystem .
-	persistenceSystem dropAllThenCreateSchema.
+	rootSystem := RootManagementSystem
+		resolvingPersistenceWith: GeneralPersistenceSystem start.
+	personManagementSystem := PersonManagementSystem toInstallOn: rootSystem.
+	rootSystem persistenceSystem dropAllThenCreateSchema

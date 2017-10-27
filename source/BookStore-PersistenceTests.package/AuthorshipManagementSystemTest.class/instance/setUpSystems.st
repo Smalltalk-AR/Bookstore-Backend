@@ -1,9 +1,7 @@
 tests
 setUpSystems
-	persistenceSystem := GeneralPersistenceSystem start.
-	booksManagementSystem := BooksManagementSystem
-		using: persistenceSystem.
-	personManagementSystem := PersonManagementSystem
-		using: persistenceSystem.
-	authorshipManagementSystem := AuthorshipManagementSystem
-		using: persistenceSystem
+	rootSystem := RootManagementSystem
+		resolvingPersistenceWith: GeneralPersistenceSystem start.
+	BooksManagementSystem toInstallOn: rootSystem.
+	PersonManagementSystem toInstallOn: rootSystem.
+	authorshipManagementSystem := AuthorshipManagementSystem toInstallOn: rootSystem

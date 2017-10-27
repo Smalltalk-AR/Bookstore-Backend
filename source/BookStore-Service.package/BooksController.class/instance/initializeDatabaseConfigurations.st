@@ -1,4 +1,0 @@
-Initialization
-initializeDatabaseConfigurations
-	booksManagementSystem := BooksManagementSystem using: GeneralPersistenceSystem current.
-	GeneralPersistenceSystem current dropAllThenCreateSchema

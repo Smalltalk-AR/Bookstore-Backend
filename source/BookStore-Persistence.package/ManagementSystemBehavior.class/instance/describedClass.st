@@ -1,0 +1,3 @@
+Accessing
+describedClass
+	self subclassResponsibility

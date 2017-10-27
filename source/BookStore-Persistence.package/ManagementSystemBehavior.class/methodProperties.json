@@ -1,13 +1,14 @@
 {
 	"instance" : {
 		"configuration" : "fischettij 10/20/2017 15:52",
+		"initializeToInstallOn:" : "fischettij 10/27/2017 11:28",
 		"relatedObjectTableNamed:" : "fischettij 10/19/2017 11:04",
-		"initializeUsing:" : "fischettij 10/19/2017 11:03",
 		"tableName" : "fischettij 10/20/2017 15:55",
 		"platform" : "fischettij 10/20/2017 15:56",
+		"describedClass" : "fischettij 10/27/2017 11:32",
 		"table" : "fischettij 10/20/2017 15:56"
 	},
 	"class" : {
-		"using:" : "fischettij 10/20/2017 15:52"
+		"toInstallOn:" : "fischettij 10/27/2017 11:10"
 	}
 }

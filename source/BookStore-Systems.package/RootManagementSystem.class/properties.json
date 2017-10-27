@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "fischettij 10/27/2017 12:16",
 	"super" : "Object",
 	"category" : "BookStore-Systems",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"persistenceSystem",
+		"subsystems"
+	],
 	"name" : "RootManagementSystem",
 	"type" : "normal"
 }

@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"persistenceSystem",
-		"booksManagementSystem"
+		"booksManagementSystem",
+		"rootSystem"
 	],
 	"name" : "BooksManagementSystemTest",
 	"type" : "normal"

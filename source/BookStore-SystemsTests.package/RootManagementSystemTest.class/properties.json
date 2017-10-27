@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "BookStore-SystemsTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"persistenceSystem",
+		"rootSystem",
+		"personManagementSystem"
+	],
+	"name" : "RootManagementSystemTest",
+	"type" : "normal"
+}

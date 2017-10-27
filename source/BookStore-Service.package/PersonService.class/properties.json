@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "BookStore-Service",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"basePath",
+		"server",
+		"controller"
+	],
+	"name" : "PersonService",
+	"type" : "normal"
+}

@@ -1,5 +1,6 @@
 Initialization
 setUp
-	persistenceSystem := GeneralPersistenceSystem start.
-	booksManagementSystem := BooksManagementSystem using: persistenceSystem.
-	persistenceSystem dropAllThenCreateSchema.
+	rootSystem := RootManagementSystem
+		resolvingPersistenceWith: GeneralPersistenceSystem start.
+	booksManagementSystem := BooksManagementSystem toInstallOn: rootSystem.
+	rootSystem persistenceSystem dropAllThenCreateSchema

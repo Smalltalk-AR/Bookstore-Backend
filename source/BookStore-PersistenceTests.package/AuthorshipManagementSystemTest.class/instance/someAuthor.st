@@ -1,3 +1,3 @@
 Accessing
 someAuthor
-	^ personManagementSystem allPersons first
+	^self personManagementSystem allPersons first

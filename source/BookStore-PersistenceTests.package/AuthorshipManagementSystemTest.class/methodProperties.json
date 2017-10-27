@@ -1,12 +1,14 @@
 {
 	"instance" : {
-		"someAuthor" : "fischettij 10/26/2017 14:24",
+		"booksManagementSystem" : "fischettij 10/27/2017 11:25",
+		"someAuthor" : "fischettij 10/27/2017 11:24",
 		"testAddAuthorship" : "fischettij 10/26/2017 14:11",
-		"setUp" : "fischettij 10/26/2017 14:17",
-		"someBook" : "fischettij 10/26/2017 14:23",
+		"personManagementSystem" : "fischettij 10/27/2017 11:24",
+		"setUp" : "fischettij 10/27/2017 11:20",
+		"someBook" : "fischettij 10/27/2017 11:25",
 		"testRemoveAuthorship" : "fischettij 10/26/2017 15:31",
-		"setUpResources" : "fischettij 10/26/2017 14:17",
-		"setUpSystems" : "fischettij 10/26/2017 14:17"
+		"setUpResources" : "fischettij 10/27/2017 11:25",
+		"setUpSystems" : "fischettij 10/27/2017 11:20"
 	},
 	"class" : { }
 }
