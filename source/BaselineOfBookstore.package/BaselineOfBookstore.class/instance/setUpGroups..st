@@ -11,5 +11,5 @@ setUpGroups: spec
 		package: 'BookStore-SystemsTests' with: [ spec requires: #('BookStore-Persistence') ];
 		package: 'BookStore-PersistenceTests' with: [ spec requires: #('BookStore-Persistence' 'BookStore-TestResource') ].
 	spec
-		group: 'Deployment' with: #('BookStore-Model' 'BookStore-Persistence' 'BookStore-Service' 'BookStore-Server' 'BookStore-Persistence');
-		group: 'Development' with: #('Deployment' 'BookStore-ModelTests' 'BookStore-PersistenceTests' 'BookStore-PersistenceTests')
+		group: 'Deployment' with: #('BookStore-Model' 'BookStore-Systems' 'BookStore-Persistence' 'BookStore-Service' 'BookStore-Server' 'BookStore-Persistence');
+		group: 'Development' with: #('Deployment' 'BookStore-ModelTests' 'BookStore-PersistenceTests' 'BookStore-SystemsTests')
