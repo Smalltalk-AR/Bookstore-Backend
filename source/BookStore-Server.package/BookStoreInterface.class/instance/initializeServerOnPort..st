@@ -1,8 +1,8 @@
 Initialization
-initializeServer
+initializeServerOnPort: number
 	server := Teapot
 		configure:
 			{(#defaultOutput -> #json).
-			(#port -> 1710).
+			(#port -> number).
 			(#debugMode -> true).
 			(#bindAddress -> #[127 0 0 1])}

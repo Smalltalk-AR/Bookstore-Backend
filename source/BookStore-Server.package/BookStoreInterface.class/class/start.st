@@ -1,3 +1,3 @@
 Starting
 start
-	^ self new start
+	^ (self toDeployOnPort: 1710) start

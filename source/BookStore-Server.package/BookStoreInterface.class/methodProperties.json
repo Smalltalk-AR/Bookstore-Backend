@@ -1,13 +1,14 @@
 {
 	"instance" : {
-		"initialize" : "fischettij 10/27/2017 13:13",
+		"initializeServerOnPort:" : "fischettij 10/29/2017 00:48",
 		"initializeSystems" : "fischettij 10/27/2017 12:37",
 		"initializeRoutes" : "fischettij 10/27/2017 13:13",
 		"stop" : "Alvaro 10/2/2017 21:20",
-		"initializeServer" : "Alvaro 10/2/2017 20:48",
-		"start" : "Alvaro 10/2/2017 21:20"
+		"start" : "Alvaro 10/2/2017 21:20",
+		"initializeToDeployOnPort:" : "fischettij 10/29/2017 00:48"
 	},
 	"class" : {
-		"start" : "Alvaro 10/2/2017 22:32"
+		"start" : "fischettij 10/29/2017 00:51",
+		"toDeployOnPort:" : "fischettij 10/29/2017 00:47"
 	}
 }
