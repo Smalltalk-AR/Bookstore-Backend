@@ -1,4 +1,4 @@
-Managing
+Deleting
 removeBookOfId: anId
 | aBook |
 	aBook := self bookOfId: anId.

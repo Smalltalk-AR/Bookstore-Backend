@@ -1,4 +1,4 @@
-tests
+Test Support
 setUpSystems
 	rootSystem := RootManagementSystem
 		resolvingPersistenceWith: GeneralPersistenceSystem start.

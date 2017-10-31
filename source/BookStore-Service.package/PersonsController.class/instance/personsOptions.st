@@ -1,3 +1,3 @@
-as yet unclassified
+Actions
 personsOptions
 	^ TeaResponse ok headers: self optionsHeaders

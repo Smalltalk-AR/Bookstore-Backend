@@ -1,4 +1,4 @@
-as yet unclassified
+Defaults
 optionsHeaders
 	^ {('Content-Type' -> 'application/json').
 	('Accept' -> 'application/json').

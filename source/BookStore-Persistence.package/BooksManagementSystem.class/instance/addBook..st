@@ -1,3 +1,3 @@
-Managing
+Adding
 addBook: aBook
 	^ generalPersistenceSystem add: aBook

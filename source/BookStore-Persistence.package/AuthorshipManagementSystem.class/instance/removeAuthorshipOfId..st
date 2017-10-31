@@ -1,4 +1,4 @@
-Managing
+Removing
 removeAuthorshipOfId: anId
 	| authorship |
 	authorship := self authorshipOfId: anId.

@@ -1,5 +1,5 @@
 Test Support
-setUp
-	self setUpSystems.
+tearDown
+	super tearDown.
 	rootSystem persistenceSystem dropAllThenCreateSchema.
-	self setUpResources
+	rootSystem persistenceSystem stop
