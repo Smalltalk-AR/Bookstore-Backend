@@ -1,3 +1,3 @@
 Starting
 start
-	^ (self toDeployOnPort: 1710) start
+	^ (self toDeployOnAdress: self defaultAdress andPort: self defaultPort) start

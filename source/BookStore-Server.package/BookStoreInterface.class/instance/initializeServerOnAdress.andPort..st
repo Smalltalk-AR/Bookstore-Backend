@@ -1,8 +1,8 @@
 Initialization
-initializeServerOnPort: number
+initializeServerOnAdress: adressByteArray andPort: number
 	server := Teapot
 		configure:
 			{(#defaultOutput -> #json).
 			(#port -> number).
 			(#debugMode -> true).
-			(#bindAddress -> #[127 0 0 1])}
+			(#bindAddress -> adressByteArray)}
