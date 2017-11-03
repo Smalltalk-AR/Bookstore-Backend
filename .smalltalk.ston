@@ -1,0 +1,20 @@
+
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Bookstore',
+      #directory : 'source',
+      #load : [ 'Development' ],
+      #platforms : [  #pharo ]
+    }
+  ],
+  #testing : {
+    #coverage : {
+       #packages : ['BookStore-*'  ]
+    },
+    #include : {  
+       #packages : [ 'BookStore*Tests' ]
+    }
+    
+  }
+} 
