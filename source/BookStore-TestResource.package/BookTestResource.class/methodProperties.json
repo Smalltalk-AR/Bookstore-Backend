@@ -1,6 +1,14 @@
 {
 	"instance" : {
-		"someBook" : "fischettij 10/26/2017 14:16"
+		"initialize" : "Jescalada 11/5/2017 19:08",
+		"bestiary" : "Jescalada 11/5/2017 19:08",
+		"eduardoSacheri" : "Jescalada 11/5/2017 19:05",
+		"thePleasureOfCookingMilhouse" : "Jescalada 11/5/2017 18:56",
+		"julioCortazar" : "Jescalada 11/5/2017 19:08"
 	},
-	"class" : { }
+	"class" : {
+		"current" : "Jescalada 11/5/2017 18:54",
+		"new" : "Jescalada 11/5/2017 18:54",
+		"newInstance" : "Jescalada 11/5/2017 18:54"
+	}
 }

@@ -1,3 +1,3 @@
 Accessing
 someAuthor
-	^ PersonTestResource new somePerson
+	^ PersonTestResource current eduardoSacheri

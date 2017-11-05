@@ -1,3 +1,0 @@
-private
-emptyPath
-	^ String new

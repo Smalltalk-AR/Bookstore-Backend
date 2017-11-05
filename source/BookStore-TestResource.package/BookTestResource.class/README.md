@@ -1,0 +1,1 @@
+Test Resource of Book Class

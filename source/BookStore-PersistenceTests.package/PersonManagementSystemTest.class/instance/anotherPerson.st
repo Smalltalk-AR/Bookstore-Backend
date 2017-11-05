@@ -1,3 +1,3 @@
 Test Support
 anotherPerson
-	^ PersonTestResource new anotherPerson
+	^ PersonTestResource current julioCortazar 

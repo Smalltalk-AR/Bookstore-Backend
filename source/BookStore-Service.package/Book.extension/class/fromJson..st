@@ -1,8 +1,5 @@
 *BookStore-Service
 fromJson: aNeoJSon
-	^ (Book
-		titled: (aNeoJSon at: #title)
-		editedBy: (aNeoJSon at: #editorial)
-		createdOn: (aNeoJSon at: #year))
+	^ (self class titled: (aNeoJSon at: #title) editedBy: (aNeoJSon at: #editorial) createdOn: (aNeoJSon at: #year) by: (aNeoJSon at: #author))
 		id: (aNeoJSon at: #id);
 		yourself

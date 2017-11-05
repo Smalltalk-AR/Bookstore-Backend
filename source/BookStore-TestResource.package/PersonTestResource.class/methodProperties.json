@@ -1,7 +1,12 @@
 {
 	"instance" : {
-		"anotherPerson" : "fischettij 10/17/2017 17:12",
-		"somePerson" : "fischettij 10/17/2017 17:12"
+		"initialize" : "Jescalada 11/5/2017 18:59",
+		"eduardoSacheri" : "Jescalada 11/5/2017 18:59",
+		"julioCortazar" : "Jescalada 11/5/2017 19:00"
 	},
-	"class" : { }
+	"class" : {
+		"current" : "Jescalada 11/5/2017 18:52",
+		"new" : "Jescalada 11/5/2017 18:53",
+		"newInstance" : "Jescalada 11/5/2017 18:52"
+	}
 }

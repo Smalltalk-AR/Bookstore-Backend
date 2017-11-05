@@ -1,1 +1,0 @@
-Controller of persons application.Interacts with the model and the Interface

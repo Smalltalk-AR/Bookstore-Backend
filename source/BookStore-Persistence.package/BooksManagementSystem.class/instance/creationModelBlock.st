@@ -5,4 +5,5 @@ creationModelBlock
 		newAttributeNamed: #id;
 		newAttributeNamed: #title;
 		newAttributeNamed: #editorial;
-		newAttributeNamed: #releaseYear ]
+		newAttributeNamed: #releaseYear;
+		newAttributeNamed: #author type: Person  ]

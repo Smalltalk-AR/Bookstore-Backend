@@ -1,3 +1,3 @@
-Test Support
-somePerson
+private
+eduardoSacheri
 	^ PersonTestResource current eduardoSacheri

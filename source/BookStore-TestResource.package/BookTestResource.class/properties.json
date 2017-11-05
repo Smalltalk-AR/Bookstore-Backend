@@ -1,11 +1,16 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "Jescalada 11/5/2017 18:57",
 	"super" : "Object",
 	"category" : "BookStore-TestResource",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
+	"classvars" : [
+		"Current"
+	],
+	"instvars" : [
+		"thePleasureOfCookingMilhouse",
+		"bestiary"
+	],
 	"name" : "BookTestResource",
 	"type" : "normal"
 }
