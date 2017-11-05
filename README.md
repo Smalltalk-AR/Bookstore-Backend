@@ -6,7 +6,7 @@
   ```smalltalk
   Metacello new
   baseline: 'Bookstore';
-  repository: 'github://apiorno/Bookstore-Backend:master/source';
+  repository: 'github://Smalltalk-AR/Bookstore-Backend:master/source';
   load
   ```
 ## Run application
