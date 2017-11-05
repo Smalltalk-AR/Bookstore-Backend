@@ -1,3 +1,3 @@
 Accessing
 describedClass
-	^describedClass
+	^ persistenceSystem describedClass

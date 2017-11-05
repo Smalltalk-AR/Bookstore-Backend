@@ -1,0 +1,3 @@
+acccessing
+fullPath
+	^ basePath , '/' , apiPath

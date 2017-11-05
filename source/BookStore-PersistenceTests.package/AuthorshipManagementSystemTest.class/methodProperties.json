@@ -1,15 +1,15 @@
 {
 	"instance" : {
 		"setUp" : "fischettij 10/27/2017 11:20",
-		"someBook" : "fischettij 10/27/2017 11:25",
-		"tearDown" : "Alvaro 11/5/2017 01:33",
-		"setUpSystems" : "fischettij 10/27/2017 11:20",
-		"someAuthor" : "fischettij 10/27/2017 11:24",
+		"someBook" : "Jescalada 11/5/2017 16:37",
+		"tearDown" : "JEscalada 11/5/2017 03:57",
+		"setUpSystems" : "BookPerson 11/5/2017 02:16",
+		"someAuthor" : "Jescalada 11/5/2017 16:39",
 		"booksManagementSystem" : "fischettij 10/27/2017 11:25",
 		"personManagementSystem" : "fischettij 10/27/2017 11:24",
-		"testRemoveAuthorship" : "fischettij 10/26/2017 15:31",
-		"setUpResources" : "fischettij 10/27/2017 11:25",
-		"testAddAuthorship" : "fischettij 10/26/2017 14:11"
+		"testRemoveAuthorship" : "Jescalada 11/5/2017 16:31",
+		"setUpResources" : "Jescalada 11/5/2017 16:39",
+		"testAddAuthorship" : "Jescalada 11/5/2017 16:30"
 	},
 	"class" : { }
 }

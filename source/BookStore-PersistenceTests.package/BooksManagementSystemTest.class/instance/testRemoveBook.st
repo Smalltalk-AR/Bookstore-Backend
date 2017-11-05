@@ -1,9 +1,9 @@
 Tests
 testRemoveBook
 	| book |
-	self assert: booksManagementSystem  booksCount equals: 0.
+	self assert: booksManagementSystem getAll isEmpty.
 	book := self book.
-	booksManagementSystem addBook: book.
-	self assert: booksManagementSystem booksCount equals: 1.
-	booksManagementSystem removeBookOfId: book id.
-	self assert: booksManagementSystem booksCount equals: 0
+	booksManagementSystem add: book.
+	self assertCollection: booksManagementSystem getAll hasSameElements: (Array with: book).
+	booksManagementSystem removeById: book id.
+	self assert: booksManagementSystem getAll isEmpty

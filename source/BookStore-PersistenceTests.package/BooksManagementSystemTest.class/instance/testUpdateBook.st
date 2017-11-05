@@ -1,11 +1,9 @@
 Tests
 testUpdateBook
-	| book anotherBook bookFromDatabase |
-	self assert: booksManagementSystem booksCount equals: 0.
+	| book anotherBook |
+	self assert: booksManagementSystem getAll isEmpty.
 	book := self book.
 	anotherBook := self anotherBook.
-	booksManagementSystem addBook: book.
-	booksManagementSystem updateBookOfId: book id with: anotherBook.
-	self assert: booksManagementSystem booksCount equals: 1.
-	bookFromDatabase := booksManagementSystem allBooks anyOne.
-	self assert: bookFromDatabase equals: anotherBook
+	booksManagementSystem add: book.
+	booksManagementSystem updateById: book id with: anotherBook.
+	self assertCollection: booksManagementSystem getAll hasSameElements: (Array with: anotherBook)

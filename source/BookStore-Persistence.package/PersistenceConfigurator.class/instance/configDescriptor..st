@@ -1,3 +1,3 @@
 Configuration
 configDescriptor: aDescriptor
-	creatingDescriptorModelBlock value: aDescriptor 
+	descriptorCreationBlock value: aDescriptor 

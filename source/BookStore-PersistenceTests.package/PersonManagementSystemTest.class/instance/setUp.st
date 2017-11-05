@@ -1,6 +1,6 @@
 initialization
 setUp
 	rootSystem := RootManagementSystem
-		resolvingPersistenceWith: GeneralPersistenceSystem start.
+		resolvingPersistenceWith: RDBPersistenceSystem start.
 	personManagementSystem := PersonManagementSystem toInstallOn: rootSystem.
 	rootSystem persistenceSystem dropAllThenCreateSchema

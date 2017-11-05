@@ -1,3 +1,3 @@
 Accessing
 someBook
-	^ self booksManagementSystem allBooks first
+	^ self booksManagementSystem getAll first

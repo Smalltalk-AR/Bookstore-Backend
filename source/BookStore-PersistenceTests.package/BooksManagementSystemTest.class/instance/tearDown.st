@@ -1,4 +1,4 @@
 Initialization
 tearDown
 	rootSystem persistenceSystem dropAllTables.
-	GeneralPersistenceSystem stop.
+	RDBPersistenceSystem stop

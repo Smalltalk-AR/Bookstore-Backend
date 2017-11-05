@@ -1,7 +1,7 @@
 Tests
 testRemovePerson
-	self assert: personManagementSystem personsCount equals: 0.
-	personManagementSystem addPerson: self somePerson.
-	self assert: personManagementSystem personsCount equals: 1.
-	personManagementSystem remove: personManagementSystem allPersons anyOne.
-	self assert: personManagementSystem personsCount equals: 0
+	self assert: personManagementSystem getAll isEmpty.
+	personManagementSystem add: self somePerson.
+	self assert: personManagementSystem count equals: 1.
+	personManagementSystem remove: personManagementSystem getAll anyOne.
+	self assert: personManagementSystem getAll isEmpty 

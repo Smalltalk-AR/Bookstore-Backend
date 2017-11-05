@@ -1,6 +1,6 @@
 Initialization
 setUp
 	rootSystem := RootManagementSystem
-		resolvingPersistenceWith: GeneralPersistenceSystem start.
+		resolvingPersistenceWith: RDBPersistenceSystem start.
 	booksManagementSystem := BooksManagementSystem toInstallOn: rootSystem.
 	rootSystem persistenceSystem dropAllThenCreateSchema

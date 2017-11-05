@@ -6,12 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"describedClass",
-		"platform",
-		"tableName",
-		"creatingClassModelBlock",
-		"creatingDescriptorModelBlock",
-		"creatingTableBlock"
+		"persistenceSystem",
+		"modelCreationBlock",
+		"descriptorCreationBlock",
+		"tableCreationBlock"
 	],
 	"name" : "PersistenceConfigurator",
 	"type" : "normal"

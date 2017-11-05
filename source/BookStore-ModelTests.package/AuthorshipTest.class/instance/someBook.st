@@ -1,3 +1,4 @@
 tests
 someBook
-	Book titled: 'title' editedBy: 'editorial' createdOn: 2001
+
+	^Book titled: 'title' editedBy: 'editorial' createdOn: 2001

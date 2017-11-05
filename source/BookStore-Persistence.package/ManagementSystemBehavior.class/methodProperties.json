@@ -1,12 +1,23 @@
 {
 	"instance" : {
-		"configuration" : "fischettij 10/20/2017 15:52",
+		"creationDescriptorBlock" : "BookPerson 11/5/2017 01:59",
+		"getById:" : "BookPerson 11/5/2017 02:06",
+		"creationTableBlock" : "BookPerson 11/5/2017 01:59",
+		"update:with:" : "Jescalada 11/5/2017 16:41",
+		"configuration" : "BookPerson 11/5/2017 01:58",
 		"initializeToInstallOn:" : "fischettij 10/27/2017 11:28",
-		"relatedObjectTableNamed:" : "fischettij 10/19/2017 11:04",
-		"tableName" : "fischettij 10/20/2017 15:55",
-		"platform" : "fischettij 10/20/2017 15:56",
+		"add:" : "BookPerson 11/5/2017 02:34",
+		"count" : "Jescalada 11/5/2017 16:31",
 		"describedClass" : "fischettij 10/27/2017 11:32",
-		"table" : "fischettij 10/20/2017 15:56"
+		"getAll" : "BookPerson 11/5/2017 02:02",
+		"remove:" : "BookPerson 11/5/2017 02:30",
+		"table" : "fischettij 10/20/2017 15:56",
+		"updateById:with:" : "BookPerson 11/5/2017 02:37",
+		"platform" : "fischettij 10/20/2017 15:56",
+		"removeById:" : "BookPerson 11/5/2017 02:30",
+		"creationModelBlock" : "BookPerson 11/5/2017 01:59",
+		"relatedObjectTableNamed:" : "fischettij 10/19/2017 11:04",
+		"tableName" : "fischettij 10/20/2017 15:55"
 	},
 	"class" : {
 		"toInstallOn:" : "fischettij 10/27/2017 11:10"

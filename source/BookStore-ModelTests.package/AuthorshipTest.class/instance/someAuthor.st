@@ -1,3 +1,4 @@
 Accessing
 someAuthor
-	^ Person named: 'Gabriel' lastName: 'García Márquez' bornIn: 'Colombia'
+
+	^Person named: 'Gabriel' lastName: 'García Márquez' bornIn: 'Colombia'

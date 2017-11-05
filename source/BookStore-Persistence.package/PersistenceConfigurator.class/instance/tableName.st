@@ -1,3 +1,3 @@
 Accessing
 tableName
-	^tableName
+	^ persistenceSystem tableName

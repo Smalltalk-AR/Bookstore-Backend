@@ -1,3 +1,3 @@
 Configuration
 configClassModel: aModel
-	creatingClassModelBlock value: aModel
+	modelCreationBlock value: aModel

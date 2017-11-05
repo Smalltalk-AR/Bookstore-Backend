@@ -1,7 +1,7 @@
 Initialization
 initializeSystems
 	rootSystem := RootManagementSystem
-		resolvingPersistenceWith: GeneralPersistenceSystem start.
+		resolvingPersistenceWith: RDBPersistenceSystem start.
 	BooksManagementSystem toInstallOn: rootSystem.
 	PersonManagementSystem toInstallOn: rootSystem.
 	AuthorshipManagementSystem toInstallOn: rootSystem.
