@@ -5,5 +5,4 @@ testAccessing
 	self
 		assert: book title equals: 'title';
 		assert: book editorial equals: 'editorial';
-		assert: book releaseYear equals: 2001;
-		assert: book author equals: self someAuthor
+		assert: book releaseYear equals: 2001
