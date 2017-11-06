@@ -1,4 +1,4 @@
-# Bookstore - Backend
+# Bookstore - Backend [![Build Status](https://travis-ci.org/Smalltalk-AR/Bookstore-Backend.svg?branch=master)](https://travis-ci.org/Smalltalk-AR/Bookstore-Backend)
 
 ## Installing
   - Execute in Playground:
