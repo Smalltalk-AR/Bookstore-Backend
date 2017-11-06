@@ -7,4 +7,5 @@ fromJson: aNeoJSon
 		bornIn: (aNeoJSon at: #country))
 		books: (aNeoJSon at:#books);
 		id: (aNeoJSon at: #id);
+		books: (aNeoJSon at: #book);
 		yourself
