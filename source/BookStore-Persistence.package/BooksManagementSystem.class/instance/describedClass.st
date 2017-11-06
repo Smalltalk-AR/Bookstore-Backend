@@ -1,3 +1,4 @@
 Accessing
 describedClass
+
 	^ Book

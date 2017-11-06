@@ -1,14 +1,16 @@
 {
 	"instance" : {
-		"synchronizeWith:" : "fischettij 10/17/2017 12:56",
 		"lastName" : "fischettij 10/17/2017 12:44",
+		"synchronizeWith:" : "fischettij 10/17/2017 12:56",
+		"initializeNamed:lastName:bornIn:" : "isosa 11/5/2017 23:19",
 		"=" : "BookPerson 11/5/2017 00:15",
+		"id" : "fischettij 10/17/2017 12:55",
+		"books:" : "isosa 11/5/2017 23:26",
+		"id:" : "fischettij 10/17/2017 12:56",
 		"country" : "fischettij 10/17/2017 12:44",
 		"hash" : "Jescalada 11/5/2017 19:34",
-		"firstName" : "fischettij 10/17/2017 12:39",
-		"id:" : "fischettij 10/17/2017 12:56",
-		"id" : "fischettij 10/17/2017 12:55",
-		"initializeNamed:lastName:bornIn:" : "fischettij 10/17/2017 14:26"
+		"books" : "isosa 11/5/2017 23:20",
+		"firstName" : "fischettij 10/17/2017 12:39"
 	},
 	"class" : {
 		"assertNotEmpty:" : "fischettij 10/17/2017 14:24",

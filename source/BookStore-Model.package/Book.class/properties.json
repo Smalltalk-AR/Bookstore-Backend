@@ -9,8 +9,7 @@
 		"id",
 		"title",
 		"editorial",
-		"releaseYear",
-		"author"
+		"releaseYear"
 	],
 	"name" : "Book",
 	"type" : "normal"

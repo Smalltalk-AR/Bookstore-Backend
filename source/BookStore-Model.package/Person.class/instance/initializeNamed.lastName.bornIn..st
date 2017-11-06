@@ -1,5 +1,7 @@
 Initialization
 initializeNamed: aFirstName lastName: aLastName bornIn: aCountry
+
 	firstName := aFirstName.
 	lastName := aLastName.
-	country := aCountry
+	country := aCountry.
+	books := OrderedCollection new
