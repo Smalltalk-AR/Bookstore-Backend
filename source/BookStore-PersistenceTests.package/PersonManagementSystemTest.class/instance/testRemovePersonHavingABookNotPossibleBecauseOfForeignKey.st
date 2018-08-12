@@ -1,9 +1,9 @@
 Tests
 testRemovePersonHavingABookNotPossibleBecauseOfForeignKey
-	| person |
-	person := self somePersonToModify.
-	self assert: personManagementSystem getAll isEmpty.
-	person addBook: self book.
+	| book person |
+
+	person := self somePerson.
+	book := self bookWrittenBy: person.
+	booksManagemenrSystem add: book.
 	personManagementSystem add: person.
-	self assert: personManagementSystem count equals: 1.
-	self should: [personManagementSystem remove: person] raise: GlorpDatabaseWriteError .
+	self should: [personManagementSystem removeById: person id] raise: GlorpDatabaseWriteError	

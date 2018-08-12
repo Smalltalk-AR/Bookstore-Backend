@@ -13,11 +13,4 @@ creationDescriptorBlock
 		from: #lastName
 		to: (table fieldNamed: 'lastName').
 	(aDescriptor newMapping: DirectMapping) from: #country to: (table fieldNamed: 'country').
-	(aDescriptor newMapping: OneToManyMapping)
-		attributeName: #books;
-		referenceClass: Book;
-		collectionType: OrderedCollection;
-		join:
-			(Join
-				from: (table fieldNamed: #id)
-				to: ((self relatedObjectTableNamed: 'BOOK') fieldNamed: 'person_id')) ]
+	 ]

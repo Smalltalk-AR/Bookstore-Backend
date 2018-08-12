@@ -3,10 +3,10 @@ testRemoveBookBeingPropertyOfAPersonByNonExclusiveRelationship
 	| book person persons |
 	
 	person := self person.
-	book := self book.
-	person addBook: book.
-	booksManagementSystem add: book.
+	book := self bookWrittenBy: person.
 	personsManagementSystem add: person.
+	booksManagementSystem add: book.
+	
 	booksManagementSystem removeById: book id.
 	
 	persons := personsManagementSystem getAll.

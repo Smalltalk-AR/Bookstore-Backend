@@ -6,5 +6,4 @@ creationModelBlock
 		newAttributeNamed: #id;
 		newAttributeNamed: #firstName;
 		newAttributeNamed: #lastName;
-		newAttributeNamed: #country;
-		newAttributeNamed: #books collectionOf: Book ]
+		newAttributeNamed: #country]

@@ -5,7 +5,5 @@ fromJson: aNeoJSon
 		named: (aNeoJSon at: #firstName)
 		lastName: (aNeoJSon at: #lastName)
 		bornIn: (aNeoJSon at: #country))
-		books: (aNeoJSon at:#books);
 		id: (aNeoJSon at: #id);
-		books: (aNeoJSon at: #book);
 		yourself

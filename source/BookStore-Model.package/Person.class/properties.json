@@ -9,8 +9,7 @@
 		"id",
 		"firstName",
 		"lastName",
-		"country",
-		"books"
+		"country"
 	],
 	"name" : "Person",
 	"type" : "normal"

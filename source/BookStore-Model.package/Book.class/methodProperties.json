@@ -1,18 +1,19 @@
 {
 	"instance" : {
-		"synchronizeWith:" : "isosa 11/5/2017 23:17",
+		"synchronizeWith:" : "apiorno 7/28/2018 18:58",
+		"title" : "Anonymous 5/31/2017 23:23",
+		"=" : "apiorno 7/28/2018 18:56",
+		"id" : "Anonymous 6/18/2017 11:50",
 		"editorial" : "Anonymous 5/31/2017 23:24",
 		"id:" : "Anonymous 6/17/2017 23:41",
-		"=" : "isosa 11/5/2017 23:17",
-		"hash" : "Jescalada 11/5/2017 19:59",
-		"releaseYear" : "fischettij 10/26/2017 14:07",
-		"id" : "Anonymous 6/18/2017 11:50",
-		"initializeTitled:editedBy:createdOn:" : "isosa 11/5/2017 23:17",
-		"title" : "Anonymous 5/31/2017 23:23"
+		"initializeTitled:editedBy:createdOn:by:" : "apiorno 7/28/2018 18:59",
+		"hash" : "apiorno 7/28/2018 18:57",
+		"author" : "apiorno 7/28/2018 18:53",
+		"releaseYear" : "fischettij 10/26/2017 14:07"
 	},
 	"class" : {
 		"assertNotEmpty:" : "fischettij 10/17/2017 17:01",
-		"titled:editedBy:createdOn:" : "isosa 11/5/2017 23:18",
+		"titled:editedBy:createdOn:by:" : "apiorno 7/28/2018 19:31",
 		"assertNotNil:" : "fischettij 10/17/2017 17:02"
 	}
 }
