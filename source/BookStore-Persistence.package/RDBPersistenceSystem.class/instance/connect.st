@@ -1,7 +1,8 @@
 Connection
 connect
+
 	| accessor |
-	accessor := DatabaseAccessor forLogin: self createLogin.
+	accessor := DatabaseAccessor forLogin: login.
 	glorpSession := GlorpSession forSystem: self.
 	glorpSession accessor: accessor.
 	self connectionFailed: false.

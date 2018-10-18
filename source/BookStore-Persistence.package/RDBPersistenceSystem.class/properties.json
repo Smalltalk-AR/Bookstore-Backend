@@ -10,7 +10,8 @@
 	"instvars" : [
 		"glorpSession",
 		"connectionFailed",
-		"configurations"
+		"configurations",
+		"login"
 	],
 	"name" : "RDBPersistenceSystem",
 	"type" : "normal"
