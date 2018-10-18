@@ -4,7 +4,7 @@ setUpGroups: spec
 		package: 'BookStore-Model';
 		package: 'BookStore-Systems';
 		package: 'BookStore-Service' with: [ spec requires: #('BookStore-Model' 'BookStore-Persistence' 'Teapot') ];
-		package: 'BookStore-Server' with: [ spec requires: #('BookStore-Service' 'Teapot') ];
+		package: 'BookStore-Server' with: [ spec requires: #('BookStore-Service' 'Teapot' 'ApplicationStarter') ];
 		package: 'BookStore-Persistence' with: [ spec requires: #('BookStore-Model' 'GlorpDriverMySQL') ];
 		package: 'BookStore-TestResource' with: [ spec requires: #('BookStore-Model') ];
 		package: 'BookStore-ModelTests' with: [ spec requires: #('BookStore-Model' 'BookStore-TestResource') ];

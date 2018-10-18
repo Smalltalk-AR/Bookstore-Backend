@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ApplicationStarterCommandLineHandler",
+	"category" : "BookStore-Server",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BookStoreCommandLineHandler",
+	"type" : "normal"
+}
