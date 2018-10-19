@@ -16,12 +16,14 @@ USER root
 WORKDIR /opt/bookstore
 
 # Copy image and changes from previous stage
+COPY start.sh .
 COPY --from=imagebuilder /opt/pharo/Pharo.image .
 COPY --from=imagebuilder /opt/pharo/Pharo.changes .
 
 RUN mkdir logs
 RUN chown -R pharo:pharo /opt/bookstore
+RUN chmod u+x start.sh
 
 USER pharo
 
-CMD ["/opt/pharo/pharo", "Pharo.image", "start-book-store", "--port=44444", "--bind-address=0.0.0.0" ]
+CMD ["./start.sh"]
