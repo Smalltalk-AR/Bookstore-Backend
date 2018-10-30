@@ -98,17 +98,6 @@ PersonManagementSystemTest >> testRemovePersonById [
 ]
 
 { #category : #Tests }
-PersonManagementSystemTest >> testRemovePersonHavingABookNotPossibleBecauseOfForeignKey [
-	| book person |
-
-	person := self somePerson.
-	book := self bookWrittenBy: person.
-	managementSystem add: book.
-	managementSystem add: person.
-	self should: [managementSystem removePersonById: person id] raise: GlorpDatabaseWriteError	
-]
-
-{ #category : #Tests }
 PersonManagementSystemTest >> testUpdatePersonWith [
 	| somePerson anUpdatedPerson personFromDatabase |
 	somePerson := self somePerson.
