@@ -33,7 +33,7 @@ PersonTestResource class >> newInstance [
 { #category : #Accessing }
 PersonTestResource >> eduardoSacheri [
 
-	^ eduardoSacheri
+	^ eduardoSacheri copy
 ]
 
 { #category : #Initialization }
@@ -44,5 +44,5 @@ PersonTestResource >> initialize [
 
 { #category : #Accessing }
 PersonTestResource >> julioCortazar [
-	^ julioCortazar
+	^ julioCortazar copy
 ]

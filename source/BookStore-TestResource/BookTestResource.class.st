@@ -31,7 +31,7 @@ BookTestResource class >> newInstance [
 
 { #category : #Accessing }
 BookTestResource >> bestiary [
-	^ bestiary
+	^ bestiary copy
 ]
 
 { #category : #private }
@@ -61,5 +61,5 @@ BookTestResource >> julioCortazar [
 { #category : #Accessing }
 BookTestResource >> thePleasureOfCookingMilhouse [
 
-	^ thePleasureOfCookingMilhouse
+	^ thePleasureOfCookingMilhouse copy
 ]
