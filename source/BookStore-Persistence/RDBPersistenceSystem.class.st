@@ -57,7 +57,7 @@ RDBPersistenceSystem >> allTableNames [
 RDBPersistenceSystem >> connect [
 	| accessor |
 	accessor := DatabaseAccessor forLogin: login.
-	glorpSession := GlorpSession forSystem: self.
+	glorpSession := StatelessApplicationGlorpSession forSystem: self.
 	glorpSession accessor: accessor.
 	connectionFailed := false.
 	[ accessor login ] ifError: [ :err | connectionFailed := true ]
@@ -129,7 +129,9 @@ RDBPersistenceSystem >> findOneOf: aClass satisfying: aCondition [
 
 { #category : #Accessing }
 RDBPersistenceSystem >> glorpSession [
-	^ glorpSession
+
+	^glorpSession  
+	
 ]
 
 { #category : #Accessing }
@@ -149,7 +151,7 @@ RDBPersistenceSystem >> initialize [
 	super initialize.
 	configurations := OrderedCollection new.
 	self platform: MySQLPlatform new.
-	NativeMySQLDriver beGlorpDefaultDriver .
+	NativeMySQLDriver  beGlorpDefaultDriver .
 	parentHolder := Binding
 		undefinedExplainedBy: 'El subsistema no se encuentra registrado en ningún sistema raíz.'.
 	login := self createLogin.

@@ -13,5 +13,5 @@ Person class >> fromJson: aNeoJSon [
 
 { #category : #'*BookStore-Service' }
 Person class >> neoJsonMapping: mapper [
-	mapper for: self do: [ :mapping | mapping mapInstVars: #(id firstName lastName country books) ]
+	mapper for: self do: [ :mapping | mapping mapInstVars: #(id firstName lastName country) ]
 ]
