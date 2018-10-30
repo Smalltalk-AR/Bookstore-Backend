@@ -2,7 +2,7 @@ Extension { #name : #Book }
 
 { #category : #'*BookStore-Service' }
 Book class >> authorFrom: aNeoJSon [
-	^ Person fromJson: aNeoJSon 
+	^ Person fromJson: aNeoJSon
 ]
 
 { #category : #'*BookStore-Service' }
