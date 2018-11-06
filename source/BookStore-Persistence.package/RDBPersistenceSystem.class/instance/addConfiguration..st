@@ -1,3 +1,0 @@
-Configuration
-addConfiguration: aConfiguration
-	configurations add: aConfiguration

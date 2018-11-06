@@ -1,3 +1,0 @@
-Actions
-stop
-	server stop

@@ -1,3 +1,0 @@
-Actions
-start
-	server start

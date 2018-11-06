@@ -1,7 +1,0 @@
-Instance Creation
-using: aSpecificPersistenceSystem creatingClassModelWith: aCreationModelBlock creatingDescriptorModelWith: aCreationDescriptorBlock creatingTableWith: aCreationTableBlock
-	^ self new
-		initializeUsing: aSpecificPersistenceSystem
-		creatingClassModelWith: aCreationModelBlock
-		creatingDescriptorModelWith: aCreationDescriptorBlock
-		creatingTableWith: aCreationTableBlock

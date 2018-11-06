@@ -1,4 +1,0 @@
-Accessing
-creationModelBlock
-	
-	self subclassResponsibility

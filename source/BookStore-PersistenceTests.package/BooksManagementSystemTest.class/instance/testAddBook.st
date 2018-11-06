@@ -1,7 +1,0 @@
-Tests
-testAddBook
-	| book |
-	self assert: booksManagementSystem getAll isEmpty.
-	book := self bookWrittenBy: self person.
-	booksManagementSystem add: book.
-	self assertCollection: booksManagementSystem getAll hasSameElements: (Array with: book)

@@ -1,4 +1,0 @@
-private - accessing
-logPrefix
-
-	^ 'Bookstore'

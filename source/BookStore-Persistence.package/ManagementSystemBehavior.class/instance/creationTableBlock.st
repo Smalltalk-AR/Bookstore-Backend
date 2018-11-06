@@ -1,3 +1,0 @@
-Accessing
-creationTableBlock
-	self subclassResponsibility

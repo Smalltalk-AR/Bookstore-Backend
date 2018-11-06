@@ -1,1 +1,0 @@
-Interface of the  application. Defining services to deploy

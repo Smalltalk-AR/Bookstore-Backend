@@ -1,3 +1,0 @@
-acccessing
-fullPath
-	^ basePath , '/' , apiPath

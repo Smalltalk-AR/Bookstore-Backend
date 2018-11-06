@@ -1,3 +1,0 @@
-Tests
-testAccessingPersistenceSystem
-	self assert: rootSystem persistenceSystem equals: persistenceSystem

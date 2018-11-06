@@ -1,3 +1,0 @@
-instance creation
-resolvingPersistenceWith: aPersistenceSystem
-	^ self new initializeResolvingPersistenceWith: aPersistenceSystem

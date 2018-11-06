@@ -1,3 +1,0 @@
-Tests
-testCountPersonsOnEmptyDatabase
-	self assert: personManagementSystem getAll isEmpty 

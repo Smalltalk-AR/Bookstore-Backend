@@ -1,2 +1,0 @@
-(name 'BookStore-ModelTests-apiorno.1509943371' message 'Fixed one to one relationship' id '9aee9407-a42f-0d00-8cab-46530816e134' date '12 August 2018' time '4:50:45.581867 pm' author 'apiorno' ancestors ((name 'BookStore-ModelTests-Alvaro.1509943370' message 'Merge branch ''master'' of https://github.com/Smalltalk-AR/Bookstore-Backend
-' id '91d2c23b-6840-572d-8462-53e4d8fc68bc' date '6 November 2017' time '1:42:50 am' author 'Alvaro' ancestors () stepChildren ())) stepChildren ())

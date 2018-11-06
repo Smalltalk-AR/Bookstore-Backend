@@ -1,3 +1,0 @@
-Test Support
-somePerson
-	^ PersonTestResource current eduardoSacheri

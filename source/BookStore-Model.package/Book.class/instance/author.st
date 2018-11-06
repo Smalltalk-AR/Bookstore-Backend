@@ -1,4 +1,0 @@
-Accessing
-author
-
-	^ author

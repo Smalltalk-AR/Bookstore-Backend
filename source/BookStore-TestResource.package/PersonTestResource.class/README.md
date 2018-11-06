@@ -1,1 +1,0 @@
-Test Resource of Person Class

@@ -1,1 +1,0 @@
-Baseline for application of books
