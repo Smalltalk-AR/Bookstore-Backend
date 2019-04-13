@@ -28,7 +28,7 @@ BaselineOfBookstore >> setUpDependencies: spec [
 				loads: #('Deployment') ];
 		baseline: 'Kepler'
 		with: [ spec
-				repository: 'github://ba-st/Kepler:master/source';
+				repository: 'github://ba-st/Kepler:v2.0.4/source';
 				loads: #('Deployment') ];
 		configuration: 'Teapot'
 		with: [ spec
