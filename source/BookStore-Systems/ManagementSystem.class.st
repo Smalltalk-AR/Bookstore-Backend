@@ -3,11 +3,11 @@ Management System Behavior
 "
 Class {
 	#name : #ManagementSystem,
-	#superclass : #System,
+	#superclass : #SubsystemImplementation,
 	#instVars : [
 		'persistenceSystem'
 	],
-	#category : 'BookStore-Systems'
+	#category : #'BookStore-Systems'
 }
 
 { #category : #'system specification' }

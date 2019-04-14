@@ -14,6 +14,22 @@ BookstoreInstallation >> description [
 ]
 
 { #category : #accessing }
+BookstoreInstallation >> modulesToInstall [
+
+	^ OrderedCollection
+		with: persistenceModule
+		with: ManagementModule
+		with: BooksManagementModule
+		with: PersonManagementModule
+]
+
+{ #category : #accessing }
+BookstoreInstallation >> name [
+
+	'Instalación de Bookstore'
+]
+
+{ #category : #accessing }
 BookstoreInstallation >> persistenceModulesToInstall [
 
 	^ OrderedCollection with: BooksManagementModule with: PersonManagementModule 

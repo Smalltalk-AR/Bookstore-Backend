@@ -4,7 +4,10 @@ s
 Class {
 	#name : #RelationalDatabaseBasedPersistenceModule,
 	#superclass : #SystemModule,
-	#category : 'BookStore-PersistenceModules'
+	#instVars : [
+		'rootSystem'
+	],
+	#category : #'BookStore-PersistenceModules'
 }
 
 { #category : #Accessing }
@@ -19,4 +22,16 @@ RelationalDatabaseBasedPersistenceModule >> registerRelationalDatabaseBasedPersi
 	^ self
 		register: [ RDBPersistenceSystem new ]
 		in: systems
+]
+
+{ #category : #private }
+RelationalDatabaseBasedPersistenceModule >> rootSystem [
+
+	^ rootSystem
+]
+
+{ #category : #private }
+RelationalDatabaseBasedPersistenceModule >> systemInterfacesToInstall [
+
+	^#(#PersistenceSystemInterface)
 ]

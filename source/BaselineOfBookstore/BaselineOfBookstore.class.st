@@ -28,12 +28,13 @@ BaselineOfBookstore >> setUpDependencies: spec [
 				loads: #('Deployment') ];
 		baseline: 'Kepler'
 		with: [ spec
-				repository: 'github://ba-st/Kepler:v2.0.4/source';
+				repository: 'github://ba-st/Kepler:v4.0.0/source';
 				loads: #('Deployment') ];
-		configuration: 'Teapot'
-		with: [ spec
-				versionString: #stable;
-				repository: 'http://smalltalkhub.com/mc/zeroflag/Teapot/main' ];
+		baseline: 'Teapot'
+			with: [ spec
+				repository: 'github://zeroflag/Teapot:v{XX}/source';
+				loads: #('Deployment') ];
+		import: 'Teapot';
 		baseline: 'GlorpDriverMySQL'
 		with: [ spec
 				repository: 'github://apiorno/GlorpDriverMySQL:master/source';
