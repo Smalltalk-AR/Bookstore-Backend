@@ -13,5 +13,7 @@ before_install:
 
 # Select compatible Smalltalk image(s)
 smalltalk:
-  - Pharo-6.1  
+  - Pharo32-6.1  
   - Pharo64-6.1
+  - Pharo32-7.0  
+  - Pharo64-7.0
