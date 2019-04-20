@@ -29,7 +29,7 @@ PersonManagementSystemTest >> bookWrittenBy: aPerson [
 { #category : #initialization }
 PersonManagementSystemTest >> setUp [
 	|persistenceSystem|
-	rootSystem := BookstoreInstallation new installSystem.
+	rootSystem := BookstoreInstallation new install: 'test'.
 	persistenceSystem := (rootSystem systemImplementing: #PersistenceSystemInterface).
 	persistenceSystem login: self setUpLogin.
 	rootSystem startUp.
@@ -60,8 +60,6 @@ PersonManagementSystemTest >> somePersonToModify [
 
 { #category : #initialization }
 PersonManagementSystemTest >> tearDown [
-	(rootSystem systemImplementing: #PersistenceSystemInterface) dropAllTables.
-	(rootSystem systemImplementing: #PersistenceSystemInterface) shutDown.
 	rootSystem shutDown
 ]
 

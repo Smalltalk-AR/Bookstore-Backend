@@ -68,8 +68,6 @@ BooksManagementSystemTest >> setUpLogin [
 
 { #category : #Initialization }
 BooksManagementSystemTest >> tearDown [
-	(rootSystem systemImplementing: #PersistenceSystemInterface) dropAllTables.
-	(rootSystem systemImplementing: #PersistenceSystemInterface) shutDown.
 	rootSystem shutDown
 ]
 

@@ -4,71 +4,72 @@ Management System Behavior
 Class {
 	#name : #ManagementSystem,
 	#superclass : #SubsystemImplementation,
-	#instVars : [
-		'persistenceSystem'
-	],
 	#category : #'BookStore-Systems'
 }
 
-{ #category : #'system specification' }
-ManagementSystem class >> implementedInterface [
-	 
-	 ^SystemInterface >> #ManagementSystemInterface
-]
-
 { #category : #'private - Managing' }
 ManagementSystem >> add: anObject [
-
-	^ persistenceSystem add: anObject
+	^ self persistenceSystem add: anObject
 ]
 
 { #category : #Querying }
 ManagementSystem >> countBooks [
-
-	^ persistenceSystem countOf: Book
+	^ self persistenceSystem countOf: Book
 ]
 
 { #category : #Querying }
 ManagementSystem >> countPersons [
+	^ self persistenceSystem countOf: Person
+]
 
-	^ persistenceSystem countOf: Person
+{ #category : #Querying }
+ManagementSystem >> dependencies [
+	^ Array with: #PersistenceSystemInterface
 ]
 
 { #category : #Querying }
 ManagementSystem >> getAllBooks [
 
-	^ persistenceSystem allOf: Book
+	^ self persistenceSystem allOf: Book
 ]
 
 { #category : #Querying }
 ManagementSystem >> getAllPersons [
-
-	^ persistenceSystem allOf: Person
+	^ self persistenceSystem allOf: Person
 ]
 
 { #category : #Querying }
 ManagementSystem >> getBookById: anId [
-
-	^ persistenceSystem findOneOf: Book satisfying: [ :each | each id = anId ]
+	^ self persistenceSystem
+		findOneOf: Book
+		satisfying: [ :each | each id = anId ]
 ]
 
 { #category : #Querying }
 ManagementSystem >> getPersonById: anId [
-
-	^ persistenceSystem findOneOf: Person satisfying: [ :each | each id = anId ]
+	^ self persistenceSystem
+		findOneOf: Person
+		satisfying: [ :each | each id = anId ]
 ]
 
-{ #category : #initialization }
-ManagementSystem >> initialize [
+{ #category : #installing }
+ManagementSystem >> implementedInterfaces [
+	^ #(#ManagementSystemInterface)
+]
 
-	super initialize.
-	persistenceSystem := self unresolvedSystemDependencyTo: #PersistenceSystemInterface
+{ #category : #accessing }
+ManagementSystem >> name [
+	^ 'Systema de Administración'
+]
+
+{ #category : #Accessing }
+ManagementSystem >> persistenceSystem [
+	^ self parent systemImplementing: #PersistenceSystemInterface
 ]
 
 { #category : #'private - Managing' }
 ManagementSystem >> remove: anObject [
-
-	^ persistenceSystem remove: anObject
+	^ self persistenceSystem remove: anObject
 ]
 
 { #category : #'private - Managing' }
@@ -83,21 +84,13 @@ ManagementSystem >> removePersonById: anId [
 	^ self remove: (self getPersonById: anId)
 ]
 
-{ #category : #initialization }
-ManagementSystem >> resolveDependecies [
-
-		persistenceSystem := self resolveSystemDependencyTo: #PersistenceSystemInterface
-
-]
-
 { #category : #'private - Managing' }
 ManagementSystem >> shutDown [
 ]
 
 { #category : #Updating }
 ManagementSystem >> update: anObject with: anUpdatedObject [
-
-	^ persistenceSystem update: anObject with: anUpdatedObject
+	^ self persistenceSystem update: anObject with: anUpdatedObject
 ]
 
 { #category : #'private - Managing' }
