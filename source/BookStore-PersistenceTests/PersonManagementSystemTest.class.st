@@ -60,8 +60,6 @@ PersonManagementSystemTest >> somePersonToModify [
 
 { #category : #initialization }
 PersonManagementSystemTest >> tearDown [
-	(rootSystem systemImplementing: #PersistenceSystemInterface) dropAllTables.
-	(rootSystem systemImplementing: #PersistenceSystemInterface) shutDown.
 	rootSystem shutDown
 ]
 
