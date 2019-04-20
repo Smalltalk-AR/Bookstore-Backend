@@ -8,21 +8,15 @@ Class {
 		'glorpSession',
 		'connectionFailed',
 		'configurations',
-		'parentHolder',
-		'login'
+		'login',
+		'state',
+		'parentBinding'
 	],
 	#classVars : [
 		'Current'
 	],
-	#category : 'BookStore-Persistence'
+	#category : #'BookStore-Persistence'
 }
-
-{ #category : #private }
-RDBPersistenceSystem class >> implementedInterface [
-	"Se agrega este mensaje por compatibilidad con sistemas de Kepler."
-
-	 ^SystemInterface >> #PersistenceSystemInterface
-]
 
 { #category : #accessing }
 RDBPersistenceSystem class >> new [
@@ -51,6 +45,27 @@ RDBPersistenceSystem >> allOf: aClass [
 { #category : #'DB-Creation' }
 RDBPersistenceSystem >> allTableNames [
 	^ configurations collect: #tableName
+]
+
+{ #category : #'System protocol' }
+RDBPersistenceSystem >> assertIsOrphan [
+	AssertionChecker
+		refuse: [ parentBinding isDefined ]
+		because: 'Cannot register a subsystem already managed by other composite.'
+		raising: SystemControlError
+]
+
+{ #category : #'System protocol' }
+RDBPersistenceSystem >> beChildOf: aCompositeSystem [
+	self assertIsOrphan.
+	parentBinding := Binding to: aCompositeSystem
+]
+
+{ #category : #'System protocol' }
+RDBPersistenceSystem >> beOrphan [
+	parentBinding := Binding
+		undefinedExplainedBy: 'This subsystem is not registered in any composite system'
+		raising: SystemControlError
 ]
 
 { #category : #Connection }
@@ -91,7 +106,8 @@ RDBPersistenceSystem >> createAllTables [
 	self allTables
 		do: [ :each | accessor createTable: each ifError: errorBlock ];
 		do: [ :each | accessor createTableIndexes: each ifError: errorBlock ];
-		do: [ :each | accessor createTableFKConstraints: each ifError: errorBlock ]
+		do:
+				[ :each | accessor createTableFKConstraints: each ifError: errorBlock ]
 ]
 
 { #category : #Connection }
@@ -140,21 +156,27 @@ RDBPersistenceSystem >> glorpSession: aGlorpSession [
 ]
 
 { #category : #Connection }
-RDBPersistenceSystem >> implements: aSystemInterface [
-	"Se agrega este mensaje por compatibilidad con sistemas de Kepler."
+RDBPersistenceSystem >> implementedInterfaces [
+	^ #(#PersistenceSystemInterface)
+]
 
-	^ self class implementedInterface = aSystemInterface 
+{ #category : #Connection }
+RDBPersistenceSystem >> implements: aSystemInterface [
+	^ self implementedInterfaces
+		anySatisfy: [ :interfaceKey | 
+			aSystemInterface
+				= ((Kepler classVarNamed: 'SystemInterfaces') >> interfaceKey) ]
 ]
 
 { #category : #Initialization }
 RDBPersistenceSystem >> initialize [
 	super initialize.
+	self beOrphan.
+	state := SystemStopped for: self.
 	configurations := OrderedCollection new.
 	self platform: MySQLPlatform new.
-	NativeMySQLDriver  beGlorpDefaultDriver .
-	parentHolder := Binding
-		undefinedExplainedBy: 'El subsistema no se encuentra registrado en ningún sistema raíz.'.
-	login := self createLogin.
+	NativeMySQLDriver beGlorpDefaultDriver.
+	login := self createLogin
 ]
 
 { #category : #Configuration }
@@ -184,6 +206,18 @@ RDBPersistenceSystem >> initializeTable: newTable [
 	newTable postInitializeIn: self
 ]
 
+{ #category : #'state tracking' }
+RDBPersistenceSystem >> isStarted [
+
+	^ state isStarted
+]
+
+{ #category : #'state tracking' }
+RDBPersistenceSystem >> isStopped [
+
+	^ state isStopped
+]
+
 { #category : #Initialization }
 RDBPersistenceSystem >> login: aLogin [
 
@@ -192,18 +226,10 @@ RDBPersistenceSystem >> login: aLogin [
 		yourself
 ]
 
-{ #category : #Connection }
+{ #category : #'System protocol' }
 RDBPersistenceSystem >> parent [
-	"Se agrega este mensaje por compatibilidad con sistemas de Kepler."
 
-	^ parentHolder content
-]
-
-{ #category : #Connection }
-RDBPersistenceSystem >> parent: aCompositeSystem [
-	"Se agrega este mensaje por compatibilidad con sistemas de Kepler."
-
-	parentHolder := Binding to: aCompositeSystem
+	^ parentBinding content
 ]
 
 { #category : #Query }
@@ -212,15 +238,25 @@ RDBPersistenceSystem >> remove: anObject [
 	^ anObject
 ]
 
-{ #category : #Connection }
+{ #category : #'state tracking' }
 RDBPersistenceSystem >> shutDown [
-	"Se agrega este mensaje por compatibilidad con sistemas de Kepler."
+	state shutDown.
+	state := SystemStopped for: self
+]
+
+{ #category : #'state tracking' }
+RDBPersistenceSystem >> shutDownWhenStarted [
 	self disconnect
 ]
 
-{ #category : #Connection }
+{ #category : #'state tracking' }
 RDBPersistenceSystem >> startUp [
-	"Se agrega este mensaje por compatibilidad con sistemas de Kepler."
+	state startUp.
+	state := SystemStarted for: self
+]
+
+{ #category : #'state tracking' }
+RDBPersistenceSystem >> startUpWhenStopped [
 	self connect.
 	self dropAllThenCreateSchema
 ]

@@ -10,6 +10,18 @@ Class {
 	#category : #'BookStore-PersistenceModules'
 }
 
+{ #category : #'Instance Creation' }
+RelationalDatabaseBasedPersistenceModule class >> toInstallOn: aRootSystem [
+
+   ^self new initializeToInstallOn: aRootSystem
+]
+
+{ #category : #Accessing }
+RelationalDatabaseBasedPersistenceModule >> initializeToInstallOn: aRootSystem [
+	rootSystem := aRootSystem.
+	self registerSystemInterface
+]
+
 { #category : #Accessing }
 RelationalDatabaseBasedPersistenceModule >> name [
 
@@ -22,6 +34,17 @@ RelationalDatabaseBasedPersistenceModule >> registerRelationalDatabaseBasedPersi
 	^ self
 		register: [ RDBPersistenceSystem new ]
 		in: systems
+]
+
+{ #category : #Accessing }
+RelationalDatabaseBasedPersistenceModule >> registerSystemInterface [
+	[ Kepler
+		registerInterfaceAt: #PersistenceSystemInterface
+		named: 'Persistence System Interface'
+		declaring:
+			#(#add: #allOf: #countOf: #findOneOf:satisfying: remove: #update:with:) ]
+		on: ConflictingObjectFound
+		do: [ :signal | signal return ]
 ]
 
 { #category : #private }

@@ -3,11 +3,11 @@
 "
 Class {
 	#name : #PersistenceModule,
-	#superclass : #Object,
+	#superclass : #SystemModule,
 	#instVars : [
 		'rootSystem'
 	],
-	#category : 'BookStore-PersistenceModules'
+	#category : #'BookStore-PersistenceModules'
 }
 
 { #category : #'Instance Creation' }
@@ -57,8 +57,8 @@ PersistenceModule >> describedClass [
 
 { #category : #accessing }
 PersistenceModule >> initializeToInstallOn: aRootSystem [
-
-	rootSystem := aRootSystem
+	rootSystem := aRootSystem.
+	self registerPersistence
 ]
 
 { #category : #accessing }
@@ -73,12 +73,6 @@ PersistenceModule >> persistenceSystem [
 	^rootSystem systemImplementing: #PersistenceSystemInterface
 ]
 
-{ #category : #printing }
-PersistenceModule >> printOn: aStream [
-
-	aStream print: self name
-]
-
 { #category : #accessing }
 PersistenceModule >> registerPersistence [
 
@@ -89,6 +83,11 @@ PersistenceModule >> registerPersistence [
 PersistenceModule >> rootSystem [
 
 	^ rootSystem
+]
+
+{ #category : #private }
+PersistenceModule >> systemInterfacesToInstall [
+	^ #()
 ]
 
 { #category : #accessing }
