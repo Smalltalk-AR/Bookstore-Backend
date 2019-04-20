@@ -28,6 +28,10 @@ BookstoreInstallation class >> persistingWith: aPersistenceModule [
 	^super new initializePersistingWith: aPersistenceModule
 ]
 
+{ #category : #installing }
+BookstoreInstallation >> beAwareOfShutDownOf: aCompositeSystem [ 
+]
+
 { #category : #accessing }
 BookstoreInstallation >> description [
 
