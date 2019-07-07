@@ -37,7 +37,7 @@ BaselineOfBookstore >> setUpDependencies: spec [
 		import: 'Teapot';
 		baseline: 'GlorpDriverMySQL'
 		with: [ spec
-				repository: 'github://apiorno/GlorpDriverMySQL:master/source';
+				repository: 'github://apiorno/GlorpDriverMySQL:v1.0.0/source';
 				loads: #('Deployment') ]
 ]
 
