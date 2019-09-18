@@ -51,7 +51,7 @@ BaselineOfBookstore >> setUpDependencies: spec [
 BaselineOfBookstore >> setUpGroups: spec [
 
 	spec
-		package: 'BookStore-Model' with: [ spec required: #('Buoy') ];
+		package: 'BookStore-Model' with: [ spec requires: #('Buoy') ];
 		package: 'BookStore-Server'
 			with: [ spec requires: #('BookStore-Model' 'ApplcationStarter' 'GlorpDriverMySQL' 'Teapot') ];
 		package: 'BookStore-Tests' with: [ spec requires: #('BookStore-Server' 'BuoyTestExtensions') ].
