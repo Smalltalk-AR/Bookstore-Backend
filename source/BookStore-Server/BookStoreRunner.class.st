@@ -5,91 +5,90 @@ Class {
 	#name : #BookStoreRunner,
 	#superclass : #Object,
 	#instVars : [
-		'server',
-		'rootSystem',
-		'installation'
+		'server'
 	],
-	#category : 'BookStore-Server'
+	#category : #'BookStore-Server'
 }
+
+{ #category : #'Instance Creation' }
+BookStoreRunner class >> default [
+
+	^ self
+		toDeployOnAddress: self defaultAdress
+		andPort: self defaultPort
+		connectingToDatbaseWith: self defaultDatabaseLogin
+]
 
 { #category : #Defaults }
 BookStoreRunner class >> defaultAdress [
+
 	^ #[127 0 0 1]
+]
+
+{ #category : #'Instance Creation' }
+BookStoreRunner class >> defaultDatabaseLogin [
+
+	^ Login new
+		username: 'root';
+		password: '';
+		port: 3306;
+		connectString: 'localhost_Bookstore';
+		yourself
 ]
 
 { #category : #Defaults }
 BookStoreRunner class >> defaultPort [
-	^ 1710
+
+	^ 44444
 ]
 
 { #category : #'Instance Creation' }
-BookStoreRunner class >> deploying: anInstallation onAdress: adressByteArray andPort: number [
-	^ self new initializeDeploying: anInstallation onAdress: adressByteArray andPort: number
+BookStoreRunner class >> toDeployOnAddress: anAdressByteArray andPort: aPortNumber connectingToDatbaseWith: aDatabaseLogin [
 
+	^ self new
+		initializeToDeployOnAddress: anAdressByteArray
+		andPort: aPortNumber
+		connectingToDatbaseWith: aDatabaseLogin
 ]
 
-{ #category : #Starting }
-BookStoreRunner class >> startDeploying: anInstallation [
-	^ (self deploying: anInstallation onAdress: self defaultAdress andPort: self defaultPort) start
-]
-
-{ #category : #Starting }
-BookStoreRunner class >> startDeployingDefault [
-	^ self startDeploying: BookstoreInstallation new
-]
-
-{ #category : #Initialization }
-BookStoreRunner >> initializeDeploying: anInstallation onAdress: adressByteArray andPort: number [
-
-	installation := anInstallation.
-	self
-		initializeSystems;
-		initializeServerOnAdress: adressByteArray andPort: number;
-		initializeRoutes
-]
-
-{ #category : #Initialization }
+{ #category : #initialization }
 BookStoreRunner >> initializeRoutes [
 
+	"
 	GenericService deployingOn: server at: '' withApiPath: 'books' delegatingTo: (GenericController workingOn: rootSystem managing: Book).
 	GenericService deployingOn: server at: '' withApiPath: 'persons' delegatingTo: (GenericController workingOn: rootSystem managing: Person).
-	
-]
+	"
 
-{ #category : #Initialization }
-BookStoreRunner >> initializeServerOnAdress: adressByteArray andPort: aPortNumber [
-
-	server := Teapot
-		configure:
-			{(#defaultOutput -> #json).
-			(#port -> aPortNumber).
-			(#debugMode -> true).
-			(#bindAddress -> adressByteArray)}
-]
-
-{ #category : #Initialization }
-BookStoreRunner >> initializeSystems [
-
-	rootSystem := installation installSystem 
 	
 ]
 
 { #category : #initialization }
-BookStoreRunner >> persistenceSystem [
-	
-	^rootSystem systemImplementing: #PersistenceSystemInterface
+BookStoreRunner >> initializeServerOnAdress: adressByteArray andPort: aPortNumber [
+
+	server := Teapot
+		configure:
+			{( #defaultOutput -> #json ).
+			( #port -> aPortNumber ).
+			( #debugMode -> true ).
+			( #bindAddress -> adressByteArray )}
 ]
 
-{ #category : #Actions }
+{ #category : #initialization }
+BookStoreRunner >> initializeToDeployOnAddress: anAdressByteArray andPort: aPortNumber connectingToDatbaseWith: aDatabaseLogin [
+
+	self
+		initializeServerOnAdress: anAdressByteArray andPort: aPortNumber;
+		initializeRoutes
+]
+
+{ #category : #controlling }
 BookStoreRunner >> start [
 
-	server start.
-	rootSystem startUp
+	server start
 ]
 
-{ #category : #Actions }
+{ #category : #controlling }
 BookStoreRunner >> stop [
 
-	server stop.
-	rootSystem shutDown
+	server stop
 ]

@@ -13,18 +13,13 @@ Class {
 	#category : 'BookStore-Model'
 }
 
-{ #category : #asserting }
-Person class >> assertNotEmpty: aString [
-	(aString isNil or: [ aString isString and: [ aString isEmpty ] ])
-		ifTrue: [ Error signal: 'Nil property in Person' ]
-]
-
 { #category : #'Instance Creation' }
-Person class >> named: firstName lastName: aLastName bornIn: aCountry [ 
-	self
-		assertNotEmpty: firstName;
-		assertNotEmpty: aLastName.
-	^ self new initializeNamed: firstName lastName: aLastName bornIn: aCountry
+Person class >> named: aFirstName lastName: aLastName bornIn: aCountry [
+
+	AssertionChecker
+		refuse: [ aFirstName isEmptyOrNil ] because: 'Nil property in Person';
+		refuse: [ aLastName isEmptyOrNil ] because: 'Nil property in Person'.
+	^ self new initializeNamed: aFirstName lastName: aLastName bornIn: aCountry
 ]
 
 { #category : #Comparing }

@@ -14,27 +14,15 @@ Class {
 	#category : 'BookStore-Model'
 }
 
-{ #category : #Testing }
-Book class >> assertNotEmpty: anObject [
-	(anObject isNil or: [ anObject isEmpty ])
-		ifTrue: [ Error signal: 'Nil property in Book' ]
-]
-
-{ #category : #Testing }
-Book class >> assertNotNil: anObject [
-	anObject isNil
-		ifTrue: [ Error signal: 'Nil property in Book' ]
-]
-
 { #category : #'Instance Creation' }
 Book class >> titled: aTitle editedBy: anEditorial createdOn: aYear by: anAuthor [
 
-	self
-		assertNotEmpty: aTitle;
-		assertNotEmpty: anEditorial;
-		assertNotNil: aYear;
-		assertNotNil: anAuthor.
-		
+	AssertionChecker
+		refuse: [ aTitle isEmptyOrNil ] because: 'Nil property in Book';
+		refuse: [ anEditorial isEmptyOrNil ] because: 'Nil property in Book';
+		refuse: [ aYear isNil ] because: 'Nil property in Book';
+		refuse: [ anAuthor isNil ] because: 'Nil property in Book'.
+
 	^ self new
 		initializeTitled: aTitle
 		editedBy: anEditorial
