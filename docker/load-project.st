@@ -1,11 +1,17 @@
+| branchName |
+
+EpMonitor current disable.
 Iceberg remoteTypeSelector: #httpsUrl.
+
+branchName := Smalltalk os environment
+  at: 'BRANCH_NAME'
+  ifPresent: [:env | env ifEmpty: ['master'] ]
+  ifAbsent: ['master'].
 
 Metacello new
 	baseline: 'Bookstore';
-	repository: 'github://Smalltalk-AR/Bookstore-Backend:master/source';
+		githubUser: 'Smalltalk-AR'
+		project: 'Bookstore-Backend'
+		commitish: branchName
+		path: 'source';
 	load: 'Deployment'.
-
-SmalltalkImage current
-	closeSourceFiles;
-	openSourceFiles;
-	snapshot: true andQuit: true. 

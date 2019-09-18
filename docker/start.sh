@@ -1,5 +1,5 @@
 #!/bin/bash
-/opt/pharo/pharo \
+pharo \
 	/opt/bookstore/Pharo.image \
 	start-book-store \
 	--port=44444 \
