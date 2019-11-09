@@ -9,6 +9,7 @@ Metacello new
 	repository: 'github://Smalltalk-AR/Bookstore-Backend:model/source'
 	load
 ```
+![Alt Text](load-model.png)
 
 * aca la idea es explorar un poco el ambiente y el lenguaje 
 Tambien ver un baseline *
